@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/register_login/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/register_login/register.css"/>
+	</head>
+	<body>
+		<section id="header_wrap">
+			<header class="header content clearfix">
+				<div class="logo">
+					<h1>
+						<a href="#" title="唯品会">唯品会</a>
+					</h1>
+				</div>
+				<div class="logo_right"></div>
+			</header>
+		</section>
+		<section id="banner_wrap">
+			<section class="banner content">
+				<div class="register">
+					<div class="register_header">
+						<h2>会员注册</h2>
+						<span>已注册可<a href="login.html">直接登录</a></span>
+					</div>
+					<form class="register_form" method="get" onsubmit="return false" >
+						<div class="username">
+							<span></span>
+							<input type="text" name="tel" placeholder="请输入手机号码" data-error="请输入正确的手机号码"/>
+							<b class="iconfont"></b>
+							<p></p>
+						</div>
+						<div class="vcode clearfix">
+							<span></span>
+							<input type="text" name="vcode" placeholder="请输入验证码" data-error="请输入6位数字手机验证码"/>
+							<b class="iconfont"></b>
+							<strong class="vodeDisplay" >获取验证码</strong>
+							<p></p>
+						</div>
+						<div class="password">
+							<span></span>
+							<input type="password" name="password" placeholder="密码由6-20位字母，数字和符号组合" data-error="请输入6-20位密码"/>
+							<b class="iconfont"></b>
+							<p></p>
+						</div>
+						<div class="password">
+							<span></span>
+							<input type="password" name="repassword" placeholder="请再次输入上面的密码" data-error="两次输入的密码不一致，请重试"/>
+							<b class="iconfont"></b>
+							<p></p>
+						</div>
+						<div class="checkBox">
+							<input type="checkbox" name="check" data-error="接受服务条款才能注册"/>
+							<i>我已阅读并接受以下条款：<a href="">《唯品会服务条款》《隐私条款》《唯品支付用户服务协议》《唯品信用服务协议》</a></i>
+							<b class="iconfont"></b>
+							<p></p>
+						</div>
+						<div class="sub">
+							<button name="btn">立即注册</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</section>
+		<section id="footer_wrap">
+			<footer class="footer content">
+				Copyright 2008-2018 vip.com，All Rights Reserved ICP证：粤 B2-20080329
+			</footer>
+		</section>
+		<script src="static/js/jquery.js"></script>
+		<script src="static/js/public.js"></script>
+		<script src="static/js/ajax0.1.0.js"></script>
+		<script src="static/js/register.js" ></script>
+	</body>
+</html>
