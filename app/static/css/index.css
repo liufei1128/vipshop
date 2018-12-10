@@ -533,7 +533,7 @@
 }
 
 .contain {
-	height: 1000px;
+	height: 500px;
 	background: url(../images/contain_bg.jpg) no-repeat;
 	background-position: center top;
 }
@@ -615,6 +615,10 @@
 
 .banner-right:hover {
 	background: url(../images/right2.png) no-repeat;
+}
+/* 页面banner底部 */
+.banner_footer{
+	height: 160px;
 }
 /* 页面主体内容 */
 #mainTop_wrapper{
