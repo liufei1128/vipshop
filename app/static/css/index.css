@@ -533,13 +533,14 @@
 }
 
 .contain {
-	height: 1000px;
-	background: url(../images/contain_bg.jpg) no-repeat;
+	height: 856px;
+	background: url(../images/contain_bg2.jpg) no-repeat;
 	background-position: center top;
 }
 
 .banner_wrap {
 	padding-top: 20px;
+	position: relative;
 }
 
 .box-outer {
@@ -548,7 +549,14 @@
 	padding: 12px;
 	box-sizing: border-box;
 }
-
+.banner_footer{
+	position: absolute;
+	top: 575px;
+	left: 120px;
+	display: block;
+	width: 760px;
+	height: 180px;
+}
 .banner-box {
 	height: 340px;
 	width: 974.1px;
