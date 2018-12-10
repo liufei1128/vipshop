@@ -53,10 +53,10 @@ gulp.task("minijs",function(){
             presets: ['@babel/env']
         }))
     .pipe(uglify())
-    .pipe(rev())
+//  .pipe(rev())
     .pipe(gulp.dest("dist/static/js"))
-    .pipe(rev.manifest())
-    .pipe(gulp.dest("rev/js"))
+//  .pipe(rev.manifest())
+//  .pipe(gulp.dest("rev/js"))
     .pipe(connect.reload())
 });
 
