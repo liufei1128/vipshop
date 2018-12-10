@@ -14,8 +14,7 @@ sass.compiler = require('node-sass');
 var del = require('del');
 
 gulp.task('default', function(callback) {
-	run('clean',
-		['minijs', 'sass', 'miniimage','iconfont'],
+	run(['minijs', 'sass', 'miniimage','iconfont'],
 		'minihtml',
 		'connect',
         'watch',

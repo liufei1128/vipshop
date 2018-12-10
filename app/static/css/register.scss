@@ -1,0 +1,221 @@
+/*版芯*/
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+/*头部*/
+#header_wrap {
+  background: #fff;
+}
+.header {
+  background: #ffffff;
+  .logo {
+    float: left;
+    h1 {
+      a {
+        margin: 25px 0;
+        display: block;
+        width: 125px;
+        height: 50px;
+        background: url(../images/re_icons.png) no-repeat;
+        background-position: -300px -82px;
+        text-indent: -9999px;
+      }
+    }
+  }
+  .logo_right {
+    margin: 39px 0;
+    float: right;
+    width: 296px;
+    height: 22px;
+    background: url(../images/re_icons.png) no-repeat;
+    background-position: 0 -39px;
+  }
+}
+/*banner图*/
+#banner_wrap {
+  height: 655px;
+  background: url(../images/banner.jpg);
+}
+.banner {
+  background: url(../images/banner.jpg) center 0;
+  height: 555px;
+  padding: 50px 20px;
+  /*box-sizing: content-box;*/
+  .register {
+    width: 360px;
+    height: 555px;
+    background: #fff;
+    float: right;
+    .register_header {
+      padding: 0 30px;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #e0e0e0;
+      overflow: hidden;
+      h2 {
+        float: left;
+        color: #666666;
+        font-size: 18px;
+        line-height: 50px;
+        font-weight: bold;
+      }
+      span {
+        float: right;
+        a {
+          color: #f10180;
+        }
+      }
+    }
+  }
+  .register_form {
+    padding: 30px;
+    p {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 5px;
+      height: 26px;
+      color: #f64a4a;
+    }
+    input {
+      padding: 6px 10px;
+      width: 248px;
+      height: 32px;
+      border: 1px solid #b2b2b2;
+      border-radius: 3px;
+      background-color: #fff;
+      color: #333;
+      line-height: 32px;
+      box-sizing: content-box;
+      &::-webkit-input-placeholder {
+        color: #999999;
+      }
+    }
+    .username {
+      position: relative;
+      input {
+        padding-left: 40px;
+      }
+      span {
+        background-position: -412px -161px;
+      }
+    }
+    .vcode {
+      position: relative;
+      input {
+        float: left;
+        padding-left: 40px;
+        width: 106px;
+      }
+      strong {
+        margin-left: 10px;
+        padding: 0 12px;
+        display: inline-block;
+        width: 106px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid #d0d0d0;
+        border-radius: 3px;
+        box-sizing: content-box;
+      }
+      span {
+        background-position: -436px -161px;
+      }
+      b {
+        left: 142px;
+      }
+    }
+    .password {
+      position: relative;
+      input {
+        padding-left: 40px;
+      }
+      span {
+        background-position: -388px -161px;
+      }
+    }
+    span {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 13px;
+      left: 11px;
+      z-index: 1;
+      background: url(../images/re_icons.png);
+    }
+    b {
+      position: absolute;
+      right: 0;
+      top: 15px;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      font-weight: bold;
+    }
+    .icon-success {
+      color: #47b85c;
+    }
+    .icon-error {
+      color: #f64a4a;
+    }
+    .checkBox {
+      font-size: 12px;
+      b {
+        display: none;
+      }
+      input {
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        margin: 0;
+      }
+      i {
+        display: block;
+        width: 276px;
+        line-height: 18px;
+        text-indent: 20px;
+      }
+    }
+    .sub {
+      button {
+        padding: 0;
+        width: 298px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid;
+        display: inline-block;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px;
+        background: #f10180;
+        box-sizing: content-box;
+      }
+    }
+  }
+}
+.vodeDisplay {
+  color: #999;
+  background: #d0d0d0;
+  cursor: not-allowed;
+}
+.vodeA {
+  cursor: pointer;
+  color: #e00078;
+  background-color: #fcedf2;
+}
+/*尾部*/
+#footer_wrap {
+  background: #fff;
+}
+.footer {
+  background: #fff;
+  text-align: center;
+  line-height: 83px;
+  font-size: 12px;
+}
