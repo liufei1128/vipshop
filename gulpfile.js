@@ -9,12 +9,15 @@ var minihtml = require("gulp-html-minify");//HTML
 const imagemin = require('gulp-imagemin');//image
 var run = require('run-sequence');
 var revCollector = require('gulp-rev-collector');//修改路径版本号
+var sass = require('gulp-sass');
+sass.compiler = require('node-sass');
+var del = require('del');
 
 gulp.task('default', function(callback) {
-	run(['minijs', 'minicss', 'miniimage'], 
+	run(['minijs', 'sass', 'miniimage','iconfont'],
 		'minihtml',
+		'connect',
         'watch',
-        'connect',
 		callback)
 });
 
@@ -26,9 +29,15 @@ gulp.task("minihtml",function(){
     .pipe(connect.reload())//实时刷新
 });
 
-gulp.task("minicss",function(){
-	gulp.src('app/static/css/**/*.css')
-    .pipe(minicss())
+//gulp.task("minicss",function(){
+//	gulp.src('app/static/css/**/*.css')
+//  .pipe(minicss())
+//  .pipe(gulp.dest('dist/static/css'))
+//  .pipe(connect.reload())
+//});
+gulp.task("sass",function(){
+	return gulp.src('app/static/css/*.scss')
+    .pipe(sass().on('error',sass.logError))
     .pipe(gulp.dest('dist/static/css'))
     .pipe(connect.reload())
 });
@@ -44,17 +53,23 @@ gulp.task("minijs",function(){
             presets: ['@babel/env']
         }))
     .pipe(uglify())
-    .pipe(rev())
+//  .pipe(rev())
     .pipe(gulp.dest("dist/static/js"))
-    .pipe(rev.manifest())
-    .pipe(gulp.dest("rev/js"))
+//  .pipe(rev.manifest())
+//  .pipe(gulp.dest("rev/js"))
     .pipe(connect.reload())
+});
+
+gulp.task("iconfont",function(){
+	gulp.src('app/static/font/*')
+	.pipe(gulp.dest('dist/static/font'))
+	.pipe(connect.reload())
 });
 
 gulp.task('watch', function() {
     gulp.watch('app/**/*.html', ['minihtml'])
     gulp.watch('app/**/*.js', ['minijs'])
-    gulp.watch('app/**/*.css', ['minicss'])
+    gulp.watch('app/**/*.scss', ['sass'])
     gulp.watch('app/**/*', ['miniimage'])
 });
 
@@ -66,6 +81,9 @@ gulp.task('connect', function() {
   });
 });
 
+gulp.task('clean', () => {
+    del(['dist', 'rev'])
+})
 //gulp.task("concat",function(){
 //	gulp.src(['js/public.js','js/login.js'])
 //  .pipe(concat("all.js"))
