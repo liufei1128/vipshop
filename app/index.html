@@ -1,139 +1,370 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>VIPSHOP唯品会商城</title>
-		<link rel="stylesheet" type="text/css" href="static/css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="static/css/index.css"/>
-	</head>
-	<body>
-<<<<<<< HEAD
-		<h1> hello world</h1>
-		<h1> 你好世界</h1>
-		<h1> 你好世界</h1>
-=======
-		<!--banner-->
-		<div class="contain">
-			<div class="banner_wrap content">
-				<div class="box-outer">
-					<div class="banner-box">
-						<ul class="banner-inner">
-							<li><a href="javaescript:;"><img src="static/images/banner01.jpg"></a></li>
-							<li><a href="javaescript:;"><img src="static/images/banner02.jpg"></a></li>
-						</ul>
-						<ul class="banner-tip">
-							<li class="active"></li>
-							<li></li>
-						</ul>
-						<span class="banner-left"></span>
-						<span class="banner-right"></span>
+
+<head>
+	<meta charset="UTF-8">
+	<title>VIPSHOP唯品会商城</title>
+	<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/index.css" />
+</head>
+
+<body>
+	<!-- 页面顶部 -->
+	<div id="top_wrapper">
+		<div class="top content">
+			<p>
+				<a href="#">深圳市</a>
+				<span class="change_city"></span>
+			</p>
+			<ul>
+				<li>
+					<span></span>
+					<a href="#">请登录</a>
+					<span></span>
+					<div class="login_hover"><a href="#">请登陆</a></div>
+				</li>
+				<li>
+					<a href="#">注册</a>
+					<span></span>
+				</li>
+				<li>
+					<a href="#"><span class="present"></span>签到有礼<i></i></a>
+					<span class="sign_in"></span>
+				</li>
+				<li>
+					<a href="#">我的订单</a>
+					<span></span>
+				</li>
+				<li>
+					<a href="#">我的特卖<i></i></a>
+					<span></span>
+					<div class="special_selling">
+						<a href="#">品牌收藏（0）</a>
+						<a href="#">商品收藏（0）</a>
+						<a href="#">我的足迹（0）</a>
 					</div>
+				</li>
+				<li>
+					<a href="#">会员俱乐部<i></i></a>
+					<span></span>
+					<div class="top_vip">
+						<a href="#">俱乐部首页</a>
+						<a href="#">唯品会兑换</a>
+					</div>
+				</li>
+				<li>
+					<a href="#">客户服务<i></i></a>
+					<span></span>
+					<div class="top_services">
+						<a href="#">联系客服</a>
+						<a href="#">帮助中心</a>
+						<a href="#">服务中心</a>
+						<a href="#">知识产权投诉</a>
+					</div>
+				</li>
+				<li>
+					<a href="#"><span class="phone"></span>手机版</a>
+					<span></span>
+					<div class="top_code">
+						<a href="#"></a>
+					</div>
+				</li>
+				<li>
+					<a href="#">更多<i></i></a>
+					<div class="top_more">
+						<a href="#">更多精彩内容</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 页面头部 -->
+	<header id="header_wrapper">
+		<div class="header content">
+			<!-- logo页 -->
+			<div class="head_logo">
+				<div class="logo">
+					<a href="#">唯品会</a>
+				</div>
+				<ul class="service_tenet">
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+				<div class="search">
+					<input type="text" placeholder="女款羽绒服">
+					<input type="submit" class="sub" value="">
+					<div class="magnifier"></div>
+					<button class="shopping_bag"><span></span>购物袋<i>0</i></button>
+
+				</div>
+			</div>
+			<!-- 页面导航 -->
+			<ul class="head_nav">
+				<li>
+					<a href="#"><img src="static/images/head-nav01.png" />商品分类</a>
+					<!-- 导航栏的二级导航 -->
+					<ul class="nav_menu">
+						<li>
+							<a href="#">女装/男装/内衣</a>
+						</li>
+						<li>
+							<a href="#">女装/男装/内衣</a>
+						</li>
+						<li>
+							<a href="#">女装/男装/内衣</a>
+						</li>
+						<li>
+							<a href="#">女装/男装/内衣</a>
+						</li>
+						<li>
+							<a href="#">女装/男装/内衣</a>
+						</li>
+						<li>
+							<a href="#">女装/男装/内衣</a>
+						</li>
+						<li>
+							<a href="#">女装/男装/内衣</a>
+						</li>
+						<li>
+							<a href="#">女装/男装/内衣</a>
+						</li>
+						<li>
+							<a href="#">女装/男装/内衣</a>
+						</li>
+						<li>
+							<a href="#">女装/男装/内衣</a>
+						</li>
+						<li>
+							<a href="#">女装/男装/内衣</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#"><i></i>12.8预付</a>
+				</li>
+				<li>
+					<a href="#">最后疯抢</a>
+				</li>
+				<li>
+					<a href="#">女装</a>
+				</li>
+				<li>
+					<a href="#">母婴</a>
+				</li>
+				<li>
+					<a href="#">家电</a>
+				</li>
+				<li>
+					<a href="#">国际</a>
+				</li>
+				<li>
+					<a href="#">美妆</a>
+				</li>
+				<li>
+					<a href="#">鞋包</a>
+				</li>
+				<li>
+					<a href="#">男装</a>
+				</li>
+				<li>
+					<a href="#">预告</a>
+				</li>
+				<li>
+					<a href="#">更多<i></i></a>
+					<div class="nav_more">
+						<a href="#">更多</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!--banner-->
+	<div class="contain">
+		<div class="banner_wrap content">
+			<div class="box-outer">
+				<div class="banner-box">
+					<ul class="banner-inner">
+						<li><a href="javaescript:;"><img src="static/images/banner01.jpg"></a></li>
+						<li><a href="javaescript:;"><img src="static/images/banner02.jpg"></a></li>
+					</ul>
+					<ul class="banner-tip">
+						<li class="active"></li>
+						<li></li>
+					</ul>
+					<span class="banner-left"></span>
+					<span class="banner-right"></span>
 				</div>
 			</div>
 		</div>
-		<!--footer-->
-		<footer id="footer">
-			<div class="footer-inner content">
-				<ul class="footer-vip">
-					<li><i class="footer-inner-01">中国第三</i></li>
-					<li><i class="footer-inner-02">全球直采</i></li>
-					<li><i class="footer-inner-03">一手货源</i></li>
-					<li><i class="footer-inner-04">入仓全检</i></li>
-					<li><i class="footer-inner-05">自营物流</i></li>
-					<li><i class="footer-inner-06">线下验真</i></li>
-					<li><i class="footer-inner-07">假货必赔</i></li>
-					<li><i class="footer-inner-08">任意退货</i></li>
-					<li><i class="footer-inner-09">万千信赖</i></li>
-					<li><i class="footer-inner-10">权威荣誉</i></li>
+	</div>
+	<div id="mainTop_wrapper">
+		<div class="mainTop_top content">
+			<div class="mainTop_head">
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+			<p></p>
+			<div class="mainTop_main">
+				<ul>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+					</li>
+					<li>
+						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+					</li>
 				</ul>
 			</div>
-			<div class="footer-list content">
-				<dl>
-					<dt>服务保障</dt>
-					<dd><a href="javescript:;">正品保证</a></dd>
-					<dd><a href="javescript:;">7天无理由放心退</a></dd>
-					<dd><a href="javescript:;">退货返运费</a></dd>
-					<dd><a href="javescript:;">7x15小时客户服务</a></dd>
-					<dd><a href="javescript:;">7天无理由随心换</a></dd>
-				</dl>
-				<dl>
-					<dt>购物指南</dt>
-					<dd><a target="_blank" href="javescript:;">导购演示</a></dd>
-					<dd><a target="_blank" href="javescript:;">订单操作</a></dd>
-					<dd><a target="_blank" href="javescript:;">会员注册</a></dd>
-					<dd><a target="_blank" href="javescript:;">账户管理</a></dd>
-					<dd><a target="_blank" href="javescript:;">收货样品</a></dd>
-					<dd><a target="_blank" href="javescript:;">会员等级</a></dd>
-				</dl>
-				<dl>
-					<dt>支付方式</dt>
-					<dd><a href="javescript:;">快捷支付</a></dd>
-					<dd><a href="javescript:;">23家主流网银支付</a></dd>
-					<dd><a href="javescript:;">货到付款</a></dd>
-					<dd><a href="javescript:;">支付宝、银联等支付</a></dd>
-					<dd><a href="javescript:;">信用卡支付</a></dd>
-					<dd><a href="javescript:;">零钱支付</a></dd>
-				</dl>
-				<dl>
-					<dt>配送方式</dt>
-					<dd><a href="javescript:;">全场满288元免运费</a></dd>
-					<dd><a href="javescript:;">配送范围及运费</a></dd>
-					<dd><a href="javescript:;">验货与签收</a></dd>
-				</dl>
-				<dl>
-					<dt>售后服务</dt>
-					<dd><a href="javescript:;">退货政策</a></dd>
-					<dd><a href="javescript:;">退货流程</a></dd>
-					<dd><a href="javescript:;">退款方式和时效</a></dd>
-					<dd><a href="javescript:;">换货服务</a></dd>
-				</dl>
-				<dl>
-					<dt>唯品会APP二维码</dt>
-					<dd><img src="static/images/page_bottom_dl_n.png"></dd>
-					<dd>下载唯品会移动APP</dd>
-				</dl>
-			</div>
-			<div class="footer-infor content">
-				<p class="footer-link">
-					<a href="javescript:;">关于我们</a>
-					<a href="javescript:;">About us</a>
-					<a href="javescript:;">Investor Relations</a>
-					<a href="javescript:;">媒体报道</a>
-					<a href="javescript:;">品牌招商</a>
-					<a href="javescript:;">隐私条款</a>
-					<a href="javescript:;">唯品诚聘</a>
-					<a href="javescript:;">唯品卡</a>
-					<a href="javescript:;">联系我们</a>
-				</p>
-				<p class="footer-text">					
-                Copyright © 2008-2018 vip.com，All Rights Reserved  使用本网站即表示接受
-                <a href="javescript:;">唯品会用户协议</a>
-                                 。版权所有 
-                <a href="javescript:;">广州唯品会电子商务有限公司</a><br />
-                <a href="javescript:;"><img src="static/images/police_icon.png">粤公网安备 44010302111111号</a>
-                &nbsp;&nbsp;
-                <a href="javescript:;">粤ICP备08114786号</a>
-                <a href="javescript:;">增值业务经营许可证：粤B2-20170777 </a>
-                <a href="javescript:;">网络文化经营许可证：粤网文〔2018〕5030-1743号</a><br />
-                <a href="javescript:;">自营主体经营证照</a>
-                &nbsp;&nbsp;
-                <a href="javescript:;">风险监测信息</a>
-                &nbsp;&nbsp;
-                <a href="javescript:;">互联网药品交易服务资格证（粤C20140002）</a>
-				</p>
-			</div>
-			<div class="footer-pic content">
-				<a href="javesrcipt:;"><i class="footer-pic-01" title="网联特约商户"></i></a>
-				<a href="javesrcipt:;"><i class="footer-pic-02" title="消费维权服务站"></i></a>
-				<a href="javesrcipt:;"><i class="footer-pic-03" title="红盾电子链接标识"></i></a>
-				<a href="javesrcipt:;"><i class="footer-pic-04" title="网络警察报警平台"></i></a>
-				<a href="javesrcipt:;"><i class="footer-pic-05" title="公安局网络警察支队"></i></a>
-				<a href="javesrcipt:;"><i class="footer-pic-06" title="诚信网站"></i></a>
-				<a href="javesrcipt:;"><i class="footer-pic-07" title="可信网站"></i></a>
-			</div>
-		</footer>
-		<script src="static/js/jquery.js"></script>
-		<script src="static/js/index.js"></script>
->>>>>>> aca67a5f8bf199e6d3e609c419d11e00b8452297
-	</body>
+		</div>
+	</div>
+	<!--footer-->
+	<footer id="footer">
+		<div class="footer-inner content">
+			<ul class="footer-vip">
+				<li><i class="footer-inner-01">中国第三</i></li>
+				<li><i class="footer-inner-02">全球直采</i></li>
+				<li><i class="footer-inner-03">一手货源</i></li>
+				<li><i class="footer-inner-04">入仓全检</i></li>
+				<li><i class="footer-inner-05">自营物流</i></li>
+				<li><i class="footer-inner-06">线下验真</i></li>
+				<li><i class="footer-inner-07">假货必赔</i></li>
+				<li><i class="footer-inner-08">任意退货</i></li>
+				<li><i class="footer-inner-09">万千信赖</i></li>
+				<li><i class="footer-inner-10">权威荣誉</i></li>
+			</ul>
+		</div>
+		<div class="footer-list content">
+			<dl>
+				<dt>服务保障</dt>
+				<dd><a href="javescript:;">正品保证</a></dd>
+				<dd><a href="javescript:;">7天无理由放心退</a></dd>
+				<dd><a href="javescript:;">退货返运费</a></dd>
+				<dd><a href="javescript:;">7x15小时客户服务</a></dd>
+				<dd><a href="javescript:;">7天无理由随心换</a></dd>
+			</dl>
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a target="_blank" href="javescript:;">导购演示</a></dd>
+				<dd><a target="_blank" href="javescript:;">订单操作</a></dd>
+				<dd><a target="_blank" href="javescript:;">会员注册</a></dd>
+				<dd><a target="_blank" href="javescript:;">账户管理</a></dd>
+				<dd><a target="_blank" href="javescript:;">收货样品</a></dd>
+				<dd><a target="_blank" href="javescript:;">会员等级</a></dd>
+			</dl>
+			<dl>
+				<dt>支付方式</dt>
+				<dd><a href="javescript:;">快捷支付</a></dd>
+				<dd><a href="javescript:;">23家主流网银支付</a></dd>
+				<dd><a href="javescript:;">货到付款</a></dd>
+				<dd><a href="javescript:;">支付宝、银联等支付</a></dd>
+				<dd><a href="javescript:;">信用卡支付</a></dd>
+				<dd><a href="javescript:;">零钱支付</a></dd>
+			</dl>
+			<dl>
+				<dt>配送方式</dt>
+				<dd><a href="javescript:;">全场满288元免运费</a></dd>
+				<dd><a href="javescript:;">配送范围及运费</a></dd>
+				<dd><a href="javescript:;">验货与签收</a></dd>
+			</dl>
+			<dl>
+				<dt>售后服务</dt>
+				<dd><a href="javescript:;">退货政策</a></dd>
+				<dd><a href="javescript:;">退货流程</a></dd>
+				<dd><a href="javescript:;">退款方式和时效</a></dd>
+				<dd><a href="javescript:;">换货服务</a></dd>
+			</dl>
+			<dl>
+				<dt>唯品会APP二维码</dt>
+				<dd><img src="static/images/page_bottom_dl_n.png"></dd>
+				<dd>下载唯品会移动APP</dd>
+			</dl>
+		</div>
+		<div class="footer-infor content">
+			<p class="footer-link">
+				<a href="javescript:;">关于我们</a>
+				<a href="javescript:;">About us</a>
+				<a href="javescript:;">Investor Relations</a>
+				<a href="javescript:;">媒体报道</a>
+				<a href="javescript:;">品牌招商</a>
+				<a href="javescript:;">隐私条款</a>
+				<a href="javescript:;">唯品诚聘</a>
+				<a href="javescript:;">唯品卡</a>
+				<a href="javescript:;">联系我们</a>
+			</p>
+			<p class="footer-text">
+				Copyright © 2008-2018 vip.com，All Rights Reserved 使用本网站即表示接受
+				<a href="javescript:;">唯品会用户协议</a>
+				。版权所有
+				<a href="javescript:;">广州唯品会电子商务有限公司</a><br />
+				<a href="javescript:;"><img src="static/images/police_icon.png">粤公网安备 44010302111111号</a>
+				&nbsp;&nbsp;
+				<a href="javescript:;">粤ICP备08114786号</a>
+				<a href="javescript:;">增值业务经营许可证：粤B2-20170777 </a>
+				<a href="javescript:;">网络文化经营许可证：粤网文〔2018〕5030-1743号</a><br />
+				<a href="javescript:;">自营主体经营证照</a>
+				&nbsp;&nbsp;
+				<a href="javescript:;">风险监测信息</a>
+				&nbsp;&nbsp;
+				<a href="javescript:;">互联网药品交易服务资格证（粤C20140002）</a>
+			</p>
+		</div>
+		<div class="footer-pic content">
+			<a href="javesrcipt:;"><i class="footer-pic-01" title="网联特约商户"></i></a>
+			<a href="javesrcipt:;"><i class="footer-pic-02" title="消费维权服务站"></i></a>
+			<a href="javesrcipt:;"><i class="footer-pic-03" title="红盾电子链接标识"></i></a>
+			<a href="javesrcipt:;"><i class="footer-pic-04" title="网络警察报警平台"></i></a>
+			<a href="javesrcipt:;"><i class="footer-pic-05" title="公安局网络警察支队"></i></a>
+			<a href="javesrcipt:;"><i class="footer-pic-06" title="诚信网站"></i></a>
+			<a href="javesrcipt:;"><i class="footer-pic-07" title="可信网站"></i></a>
+		</div>
+	</footer>
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/index.js"></script> >>>>>>> aca67a5f8bf199e6d3e609c419d11e00b8452297
+</body>
+
 </html>
