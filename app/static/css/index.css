@@ -741,6 +741,8 @@
 
 .footer-inner {
 	overflow: hidden;
+	margin: 0 auto;
+	width: 960px;
 }
 
 .footer-vip i {
@@ -802,10 +804,10 @@
 }
 
 .footer-list {
-	margin-top: 35px;
-	margin-bottom: 25px;
 	box-sizing: border-box;
 	height: 150px;
+	margin: 35px auto 25px auto;
+	width: 960px;
 }
 
 .footer-list a {
