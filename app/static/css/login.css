@@ -20,7 +20,7 @@
 	display: block;
 	width:125px;
 	height:50px;
-	background:url(../../images/re_icons.png) no-repeat;
+	background:url(../images/re_icons.png) no-repeat;
 	background-position: -300px -82px;
 	text-indent: -9999px;
 }
@@ -29,17 +29,17 @@
 	float: right;
 	width:296px;
 	height:22px;
-	background: url(../../images/re_icons.png) no-repeat;
+	background: url(../images/re_icons.png) no-repeat;
 	background-position: 0 -39px;
 }
 
 /*banner图*/
 #banner_wrap{
 	height:655px;
-	background: url(../../images/banner.jpg);
+	background: url(../images/banner.jpg);
 }
 .banner{
-	background: url(../../images/banner.jpg) center 0;
+	background: url(../images/banner.jpg) center 0;
 	height:555px;
 	padding: 50px 20px;
 }
@@ -92,7 +92,7 @@
 	margin: auto;
 	width:172px;
 	height:172px;
-	background: url(../../images/ewm.png) no-repeat center;
+	background: url(../images/ewm.png) no-repeat center;
 	border: 1px solid #eee;
 	transition: all 0.3s linear 0.5s; 
 }
@@ -102,7 +102,7 @@
     right: 30px;
 	width: 120px;
     height: 192px;
-    background: url(../../images/re_icons.png) center;
+    background: url(../images/re_icons.png) center;
     background-position: 0 -104px;
     opacity: 0;
     transition: all 0.3s linear 0.5s;
@@ -174,7 +174,7 @@
 	top: 13px;
     left: 11px;
     z-index: 1;
-	background: url(../../images/re_icons.png);
+	background: url(../images/re_icons.png);
 }
 .banner .login_form .username span{
 	background-position: -460px -161px;
@@ -236,7 +236,7 @@
 	display: inline-block;
 	width:40px;
 	height:40px;
-	background: url(../../images/re_icons.png);
+	background: url(../images/re_icons.png);
 	background-position: -300px -161px;
 }
 .banner .login .login_footer{

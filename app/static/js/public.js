@@ -55,3 +55,10 @@ function reverseString(str) {
 	str = str.join("");
 	return str;
 }
+
+function a(){
+	console.log(1);
+}
+function b(){
+	console.log(2);
+}
