@@ -535,18 +535,27 @@
 	margin: 0 auto;
 }
 .contain {
-	height: 500px;
-	background: url(../images/contain_bg.jpg) no-repeat;
+	height: 856px;
+	background: url(../images/contain_bg2.jpg) no-repeat;
 	background-position: center top;
 }
 .banner_wrap {
 	padding-top: 20px;
+	position: relative;
 }
 .box-outer {
 	width: 1000px;
 	background-color: #fff;
 	padding: 12px;
 	box-sizing: border-box;
+}
+.banner_footer{
+	position: absolute;
+	top: 575px;
+	left: 120px;
+	display: block;
+	width: 760px;
+	height: 180px;
 }
 .banner-box {
 	height: 340px;
@@ -604,13 +613,9 @@
 .banner-right:hover {
 	background: url(../images/right2.png) no-repeat;
 }
-/* 页面banner底部 */
-.banner_footer{
-	height: 160px;
-}
 /* 页面主体内容 */
 #mainTop_wrapper{
-    height: 2000px;
+    height: 2230px;
     background-image: url(../images/mainTop-bg.jpg);
     background-size:cover;
 }
@@ -699,8 +704,10 @@
     margin: 20px 0 0 10px;
 }
 .mainTop_main>ul>li{
-    width: 150px;
+	width: 150px;
 	float: left;
+	margin: 20px 15px 0 0;
+	position: relative;
 }
 .mainTop_main>ul>li>a{
     display: block;
@@ -710,6 +717,123 @@
 .mainTop_main>ul>li>a>img{
     width: 100%;
     border: 1px solid #ffffff;
+}
+.mainTop_main>ul>li>a>p{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	color: #000000;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	position: absolute;
+	top: 141px;
+	left: 1px;
+}
+.mainTop_footer{
+	width: 1000px;
+	height: 698px;
+	background-color: #8c66bb;
+	border-radius: 5px;
+}
+.mainTop_footer h2{
+	width: 998px;
+	height: 201px;
+	background-image: url(../images/mainTop03.jpg);
+	padding-left: 1px;
+}
+.mainTop_footer .mainFooter-top{
+	height: 160px;
+	float: left;
+	margin-left: 10px;
+}
+.mainTop_footer .mainFooter-top li{
+	width: 324px;
+	height: 100%;
+	background-image: url(../images/mainTop-main04.jpg);
+	background-size: cover;
+	float: left;
+	margin: 0 5px 0 0;
+}
+.mainTop_footer .mainFooter-top li:nth-child(2){
+	background-image: url(../images/mainTop-main05.jpg);
+}
+.mainTop_footer .mainFooter-top li:nth-child(3){
+	background-image: url(../images/mainTop-main06.jpg);
+}
+.mainTop_footer .mainFooter-top li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.mainTop_footer .mainFooter-top li a p{
+	width: 140px;
+	height: 120px;
+	background-color: #fff;
+	position: absolute;
+	left: 13px;
+	top: 20px;
+}
+.mainTop_footer .mainFooter-top li a p span{
+	display: block;
+	width: 100px;
+	height: 50px;
+	background-image: url(../images/mainTop-mainH.png);
+	background-size: cover;
+	margin: 20px 20px 9px 20px;
+}
+.mainTop_footer .mainFooter-top li a p i{
+	display: block;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	color: #000000;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0 10px;
+	border-top: 1px solid #cccccc;
+}
+.mainTop_footer .mainFooter-footer{
+	height: 330px;
+	margin-left: 10px;
+	float: left;
+}
+.mainTop_footer .mainFooter-footer li{
+	width: 160px;
+	height: 160px;
+	box-sizing: border-box;
+	border: 1px solid #cccccc;
+	background-color: #fff;
+	margin: 5px 5px 0 0;
+	float: left;
+}
+.mainTop_footer .mainFooter-footer li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.mainTop_footer .mainFooter-footer li a span{
+	display: block;
+	width: 100px;
+	height: 50px;
+	margin: 40px 29px 19px 29px;
+	background-image: url(../images/mainTop-h1.png);
+	background-size: cover;
+}
+.mainTop_footer .mainFooter-footer li a i{
+	display: block;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	color: #999999;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0 20px;
+	border-top: 1px solid #cccccc;
 }
 /*footer */
 #footer {
@@ -724,6 +848,8 @@
 }
 .footer-inner {
 	overflow: hidden;
+	margin: 0 auto;
+	width: 960px;
 }
 .footer-vip i {
 	display: block;
@@ -772,10 +898,10 @@
 	background-position: -720px 0;
 }
 .footer-list {
-	margin-top: 35px;
-	margin-bottom: 25px;
 	box-sizing: border-box;
 	height: 150px;
+	margin: 35px auto 25px auto;
+	width: 960px;
 }
 .footer-list a {
 	text-decoration: none;
