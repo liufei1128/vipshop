@@ -428,6 +428,7 @@
     height: 43px;
     line-height: 43px;
     color: #333333;
+    font-size: 16px;
     padding: 0 10px;
     position: relative;
 }
@@ -499,12 +500,14 @@
     display: block;
 }
 .head_nav>li:nth-child(1):hover .nav_menu{
-    display: block;
+    height: 473px;
+    transition: all .5s;
 }
 .head_nav>li .nav_menu{
     width: 156px;
-    height: 473px;
-    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
     float: left;
     z-index: 9;
     position: absolute;
@@ -613,7 +616,7 @@
 .banner-right:hover {
 	background: url(../images/right2.png) no-repeat;
 }
-/* 页面主体内容 */
+/* 页面banner与主体内容之间的内容 */
 #mainTop_wrapper{
     height: 2230px;
     background-image: url(../images/mainTop-bg.jpg);
@@ -823,6 +826,9 @@
 	background-image: url(../images/mainTop-h1.png);
 	background-size: cover;
 }
+.mainTop_footer .mainFooter-footer li:nth-child(2n) a span{
+    background-image: url(../images/mainTop-h2.png);
+}
 .mainTop_footer .mainFooter-footer li a i{
 	display: block;
 	width: 120px;
@@ -835,6 +841,12 @@
 	margin: 0 20px;
 	border-top: 1px solid #cccccc;
 }
+/* 页面的主体内容 */
+
+
+
+
+
 /*footer */
 #footer {
 	display: block;
