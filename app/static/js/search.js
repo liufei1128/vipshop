@@ -1,5 +1,6 @@
 var search = (function() {
 	var $ul = document.querySelector(".main_list");
+	var $moreSelect = document.querySelector(".search_more_btn");
 	var $comprehensive = document.querySelector(".comprehensive p");
 	var $price = document.querySelector(".price p");
 	return {
@@ -9,7 +10,6 @@ var search = (function() {
 		event() {
 			var _this = this;
 			$comprehensive.onclick = function() {
-				console.log(this);
 				this.className="search_active";
 				$price.className = "";
 				$ul.innerHTML = "";
@@ -42,6 +42,16 @@ var search = (function() {
 					});
 					_this.insertData(data);
 				});
+			}
+			$moreSelect.onclick = function(){
+				var liAll = $(".search_body_bottom>li");
+				var ul_none = $(".ul_none");
+				ul_none.toggle();
+				$(liAll[3]).toggle();
+//				$moreSelect.innerHTML = "点击收起";
+//				li_none[li_none.length-1].className += " search_child";
+//				var li = document.querySelector(".search_child");
+//				li.className = "";
 			}
 		},
 		insertData(data) {
