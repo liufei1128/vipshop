@@ -44,7 +44,6 @@ var loginWrap = (function() {
 					data = JSON.parse(data);
 					setTimeout(_=>{
 						if(data.code == "10000"){
-							console.log(data.data);
 							document.cookie = `username =${data.data}`;
 							console.log(document.cookie);
 							alert("登录成功");
