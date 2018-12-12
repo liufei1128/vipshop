@@ -5,23 +5,23 @@
 var shopCar =(function(){
 	return{
 		init(){			
-			this.$allshop = document.querySelector('.g-shop-list');
-			this.$gyy = document.querySelector('.g-yy');
-			this.$gtm = document.querySelector('.g-tm');
-			this.$gbd1 = document.querySelector('.g-bd1');
-			this.$gbd2 = document.querySelector('.g-bd2');
+			this.$allshop = $('.g-shop-list');
+			this.$gyy = $('.g-yy');
+			this.$gtm = $('.g-tm');
+			this.$gbd1 = $('.g-bd1');
+			this.$gbd2 = $('.g-bd2');
+			this.commit =$('.g-car-count a');
 			this.getData().then(_=> {
-				this.$plusall = document.querySelectorAll('.quantity-plus');
-				this.$reduceall = document.querySelectorAll('.quantity-reduce');
-				this.$count = document.querySelectorAll('.quantity-count');
-				this.$perprice = document.querySelectorAll('.price-item');
-				this.$pricecount = document.querySelectorAll('.subtotal_count');
-				this.$priceall = document.querySelectorAll('.price-right-nub span i');
-				this.$countGoods = document.querySelector('.count-goods');
-				this.$delGood = document.querySelectorAll('.actions-item span');
-				this.$alltr = this.$allshop.querySelectorAll('tr');					
+				this.$plusall = $('.quantity-plus');
+				this.$reduceall = $('.quantity-reduce');
+				this.$count = $('.quantity-count');
+				this.$perprice = $('.price-item');
+				this.$pricecount = $('.subtotal_count');
+				this.$priceall = $('.price-right-nub span i');
+				this.$countGoods = $('.count-goods');
+				this.$delGood = $('.actions-item span');
+				this.$alltr = $(this.$allshop).children()				
 				this.event();
-
 			})
 			// debugger
 		},
@@ -29,26 +29,30 @@ var shopCar =(function(){
 			var _this = this;
 			var c=0,
 				s=0;
-			this.$gyy.onclick = function(){
-				_this.$gbd1.style.display = 'none';
-				_this.$gbd2.style.display = 'block';
-				_this.$gtm.className =_this.$gtm.className.replace('active', '');
-				_this.$gyy.className+= ' active';				
+			$(this.$gyy).click(function(){
+				$(_this.$gbd1).css({'display':'none'});
+				$(_this.$gbd2).css({'display':'block'});
+				// $(this).addClass('active').siblings().removeClass('active');
+				$(_this.$gtm).removeClass('active');
+				$(_this.$gyy).addClass("active");				
+			});
+			$(this.$gtm).click(function(){
+				$(_this.$gbd1).css({'display':'block'});
+				$(_this.$gbd2).css({'display':'none'});
+				$(_this.$gtm).addClass('active');
+				$(_this.$gyy).removeClass("active");
+			});
+			for(let i =0;i<$(this.$plusall).length;i++){
+				c+=parseInt($(_this.$count[i]).text());
+				s+=parseInt($(_this.$pricecount[i]).text());
 			}
-			this.$gtm.onclick = function(){
-				_this.$gbd1.style.display = 'block';
-				_this.$gbd2.style.display = 'none';
-				_this.$gyy.className =_this.$gyy.className.replace('active', '');
-				_this.$gtm.className+= ' active';
-			}
-			for(let i =0;i<this.$plusall.length;i++){
-				c+=parseInt(_this.$count[i].innerHTML);
-				s+=parseInt(_this.$pricecount[i].innerHTML);
-			}
-			this.$alltr = this.$allshop.querySelectorAll('tr');
-			_this.$priceall[0].innerHTML =  _this.$priceall[1].innerHTML=s;
-			for(let i =0;i<this.$plusall.length;i++){
-				this.$alltr[i].onclick = function(e){
+			
+			$(_this.$countGoods).text(c);
+			$(_this.$priceall[0]).text(s);
+			$(_this.$priceall[1]).text(s);
+
+			for(let i =0;i<$(this.$plusall).length;i++){
+				$(this.$alltr[i]).click(function(e){
 					e = e || window.event;
 					var target = e.target || e.srcElement;
 					var t =_this.$count[i].innerHTML;
@@ -64,25 +68,30 @@ var shopCar =(function(){
 							t=1;
 						}
 					}
-					var _t = _this.$count[i].innerHTML
+					var _t =$( _this.$count[i]).text();
 					c+=t - _t;
-					_this.$count[i].innerHTML = t;
-					_this.$countGoods.innerHTML = c;
-					var p = _this.$pricecount[i].innerHTML;
-					_this.$pricecount[i].innerHTML =_this.$perprice[i].innerHTML*t;
-					s += parseInt(_this.$pricecount[i].innerHTML) - p;
-					_this.$priceall[0].innerHTML =  _this.$priceall[1].innerHTML =s;
-				}
+					$( _this.$count[i]).text(t);
+					$(_this.$countGoods).text(c);
+					var p = $( _this.$pricecount[i]).text();
+					$(_this.$pricecount[i]).text($(_this.$perprice[i]).text()*t);
+					s += parseInt($( _this.$pricecount[i]).text()) - p;
+					$(_this.$priceall[0]).text(s);
+					$(_this.$priceall[1]).text(s);
+				});
 				
-				this.$delGood[i].onclick = function(){
+				$(this.$delGood[i]).click(function(){
 					var parent =_this.$delGood[i].parentNode.parentNode;
 					parent.parentNode.removeChild(parent);
-					c -= _this.$count[i].innerHTML;
-					_this.$countGoods.innerHTML = c;
-					s-= _this.$pricecount[i].innerHTML;
-					_this.$priceall[0].innerHTML =  _this.$priceall[1].innerHTML =s;
-				}
+					c -= $(_this.$count[i]).text();
+					$(_this.$countGoods).text(c);
+					s-= $( _this.$pricecount[i]).text();
+					$(_this.$priceall[0]).text(s);
+					$(_this.$priceall[1]).text(s);
+				});
 			}
+			$(this.commit).click(function(){
+				alert("提交订单成功！");
+			});
 		},
 		getData() {
 			// var shopList = localStorage.shopList || '[]';
@@ -128,7 +137,7 @@ var shopCar =(function(){
 					<span>删除</span>
 				</td>
 				`
-				this.$allshop.appendChild($tr);
+				$(this.$allshop).append($tr);
 			}
 		}
 	}
