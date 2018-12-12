@@ -3,26 +3,27 @@
  * 购物车
  * */
 var shopCar =(function(){
-	var flag;
 	return{
 		init(){			
-			this.getData();
+			this.$allshop = document.querySelector('.g-shop-list');
 			this.$gyy = document.querySelector('.g-yy');
 			this.$gtm = document.querySelector('.g-tm');
 			this.$gbd1 = document.querySelector('.g-bd1');
 			this.$gbd2 = document.querySelector('.g-bd2');
-			this.$plusall = document.querySelectorAll('.quantity-plus');
-			this.$reduceall = document.querySelectorAll('.quantity-reduce');
-			this.$count = document.querySelectorAll('.quantity-count');
-			this.$perprice = document.querySelectorAll('.price-item');
-			this.$pricecount = document.querySelectorAll('.subtotal_count');
-			this.$priceall = document.querySelectorAll('.price-right-nub span i');
-			this.$countGoods = document.querySelector('.count-goods');
-			this.$delGood = document.querySelectorAll('.actions-item span');
-			this.$allshop = document.querySelector('.g-shop-list');
-			this.$alltr = this.$allshop.querySelectorAll('tr');					
-			console.log(this.$alltr,this.$perprice);
-			this.event();
+			this.getData().then(_=> {
+				this.$plusall = document.querySelectorAll('.quantity-plus');
+				this.$reduceall = document.querySelectorAll('.quantity-reduce');
+				this.$count = document.querySelectorAll('.quantity-count');
+				this.$perprice = document.querySelectorAll('.price-item');
+				this.$pricecount = document.querySelectorAll('.subtotal_count');
+				this.$priceall = document.querySelectorAll('.price-right-nub span i');
+				this.$countGoods = document.querySelector('.count-goods');
+				this.$delGood = document.querySelectorAll('.actions-item span');
+				this.$alltr = this.$allshop.querySelectorAll('tr');					
+				this.event();
+
+			})
+			// debugger
 		},
 		event(){
 			var _this = this;
@@ -44,6 +45,7 @@ var shopCar =(function(){
 				c+=parseInt(_this.$count[i].innerHTML);
 				s+=parseInt(_this.$pricecount[i].innerHTML);
 			}
+			this.$alltr = this.$allshop.querySelectorAll('tr');
 			_this.$priceall[0].innerHTML =  _this.$priceall[1].innerHTML=s;
 			for(let i =0;i<this.$plusall.length;i++){
 				this.$alltr[i].onclick = function(e){
@@ -65,7 +67,6 @@ var shopCar =(function(){
 					var _t = _this.$count[i].innerHTML
 					c+=t - _t;
 					_this.$count[i].innerHTML = t;
-					console.log(c);
 					_this.$countGoods.innerHTML = c;
 					var p = _this.$pricecount[i].innerHTML;
 					_this.$pricecount[i].innerHTML =_this.$perprice[i].innerHTML*t;
@@ -86,24 +87,19 @@ var shopCar =(function(){
 		getData() {
 			// var shopList = localStorage.shopList || '[]';
 			// shopList = JSON.parse(shopList);
-
 			// console.log(shopList);
 			// this.insertData(shopList)
-			sendAjax('static/json/shoplist.json').then(res => {
+			return sendAjax('static/json/shoplist.json').then(res => {
 				res = JSON.parse(res);
 				if(res.code == 0) {
 					// 把商品数据存到shop对象里
 					this.data = res.data;
 					console.log(this.data);
 					this.insertData(res.data);
-					console.log(2222);
-					flag = 1;					
 				} else {
-					flag = 0;
 					alert("获取信息失败, 请查询网络状况");
 				}
 			});
-			return flag ;
 		},
 		insertData(data){
 			for(let i= 0; i < data.length; i++ ) {
@@ -134,19 +130,6 @@ var shopCar =(function(){
 				`
 				this.$allshop.appendChild($tr);
 			}
-		},
-		load(data){
-			var t= this.getData();
-			console.log(t);
-			console.log(1);
-			return new Promise((resolve,reject) =>{
-				if(t){
-					console.log(2);
-					resolve(data);
-				}else{
-					reject(data);
-				}
-			})
 		}
 	}
 }())
