@@ -145,7 +145,7 @@
     position: absolute;
     top: 27px;
     left: -1px;
-    z-index: 9;
+    z-index: 6;
 }
 .top ul li:nth-child(1):hover{
     border: 1px solid #cccccc;
@@ -173,7 +173,7 @@
     position: absolute;
     top: 27px;
     left: -1px;
-    z-index: 9;
+    z-index: 6;
 }
 .top ul li:nth-child(5):hover .special_selling{
     display: block;
@@ -195,7 +195,7 @@
     position: absolute;
     top: 27px;
     left: -1px;
-    z-index: 9;
+    z-index: 6;
 }
 .top_vip a{
     display: block;
@@ -220,7 +220,7 @@
     position: absolute;
     top: 27px;
     left: -1px;
-    z-index: 9;
+    z-index: 6;
 }
 .top_services a{
     display: block;
@@ -244,7 +244,7 @@
     position: absolute;
     top: 27px;
     left: -43px;
-    z-index: 9;
+    z-index: 6;
 }
 .top .top_code a{
     width: 100px;
@@ -276,7 +276,7 @@
     position: absolute;
     top: 27px;
     left: -1px;
-    z-index: 9;
+    z-index: 6;
 }
 .top_more a{
     display: block;
@@ -434,6 +434,7 @@
 }
 .head_nav>li:nth-child(1){
     width: 156px;
+    position: relative;
 }
 .head_nav>li:nth-child(1)>a{
     display: block;
@@ -489,7 +490,7 @@
     position: absolute;
     top: 53px;
     left: 919px;
-	z-index: 9;
+	z-index: 6;
 	box-sizing: border-box;
 	padding-left: 2px;
 }
@@ -501,6 +502,7 @@
 }
 .head_nav>li:nth-child(1):hover .nav_menu{
     height: 495px;
+    overflow: visible;
     transition: all .3s;
 }
 /* 二级导航栏 */
@@ -510,9 +512,9 @@
     overflow: hidden;
     transition: all .3s;
     float: left;
-    z-index: 9;
+    z-index: 6;
     position: absolute;
-    top: 53px;
+    top: 43px;
     left: 0px;
 }
 .head_nav>li .nav_menu>li{
@@ -530,7 +532,7 @@
     background-color: #f10180;
     box-sizing: border-box;
 }
-.head_nav>li a:hover{
+.head_nav>li a:hover {
     color: #f10180;
 }
 .head_nav>li:nth-child(1)>a:hover{
@@ -548,7 +550,7 @@
     display: none;
     background-color: #fff;
     position: absolute;
-    top: 63px;
+    top: 0px;
     left: 136px;
 }
 .head_nav .menu_three .three_img{
@@ -604,8 +606,11 @@
     background-color: #fff;
     padding: 0 5px 0 0;
 }
-.head_nav>li .nav_menu li:hover .menu_three{
+.head_nav>li:hover .nav_menu li:hover .menu_three{
     display: block;
+}
+.head_nav .menu_three ul li a:hover{
+    color: #fa2a83;
 }
 /*banner*/
 .content {
@@ -1667,10 +1672,10 @@
     background-size: 80px 40px;
 }
 .sports_main ul li:nth-child(2n) h3 i{
-    background-image: url(../images/main06-02h.png.webp);
+    background-image: url(../images/main06-01h.png.webp);
 }
 .sports_main ul li:nth-child(3n) h3 i{
-    background-image: url(../images/main06-03h.png.webp);
+    background-image: url(../images/main06-01h.png.webp);
 }
 .sports_main ul li:nth-child(4n) h3 i{
     background-image: url(../images/main06-04h.png.webp);
@@ -1800,7 +1805,7 @@
     background-image: url(../images/main07-03h.png.webp);
 }
 .shirt_main ul li:nth-child(4n) h3 i{
-    background-image: url(../images/main07-04h.png.webp);
+    background-image: url(../images/main07-04h.jpg.webp);
 }
 .shirt_main ul li h2{
     width: 196px;
