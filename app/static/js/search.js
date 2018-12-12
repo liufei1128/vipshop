@@ -46,12 +46,12 @@ var search = (function() {
 			$moreSelect.onclick = function(){
 				var liAll = $(".search_body_bottom>li");
 				var ul_none = $(".ul_none");
+				var i = $(".search_more_btn i");
+				var span = $(".search_more_btn span");
 				ul_none.toggle();
-				$(liAll[3]).toggle();
-//				$moreSelect.innerHTML = "点击收起";
-//				li_none[li_none.length-1].className += " search_child";
-//				var li = document.querySelector(".search_child");
-//				li.className = "";
+				$(liAll[liAll.length-1]).toggle();
+				i.toggle();
+				span.toggle();
 			}
 		},
 		insertData(data) {

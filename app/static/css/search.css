@@ -171,6 +171,9 @@
 	display: inline-block;
 	line-height: 28px;
 }
+.search .search_more .search_more_btn .i_second{
+	display: none;
+}
 .search .search_more .search_more_btn span{
 	display: inline-block;
 	width:9px;
@@ -178,7 +181,11 @@
 	background: url(../images/icon.png);
 	background-position: -256px -170px;
 }
-
+.search .search_more .search_more_btn .span_second{
+	display: none;
+	background: url(../images/icon.png);
+	background-position: -269px -170px;
+}
 #main_wrap{
 	background: #FFFFFF;
 }
