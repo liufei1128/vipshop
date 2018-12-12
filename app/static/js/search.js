@@ -8,7 +8,7 @@ $('.text').on("blur",function(){
 var searchInp = (function(){
     return {
         init(){
-
+            
         },
         event(){
 
