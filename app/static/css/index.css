@@ -416,7 +416,7 @@ ul li:nth-child(5) a i{
     position: absolute;
     top: 64px;
     left: 35px;
-    z-index: 6;
+    z-index: 5;
     display: none;
 }
 .search .search_onclick .search_onclick_left{
@@ -940,6 +940,7 @@ ul li:nth-child(5) a i{
 }
 /* 定位在页面中的导航栏 */
 .venue_navigation{
+    display: none;
     width: 120px;
     position: fixed;
     top: 0;
