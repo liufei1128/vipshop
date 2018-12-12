@@ -404,6 +404,28 @@ ul li:nth-child(5) a i{
     top: 0;
     cursor: pointer;
 }
+.search .search_result{
+    width: 370px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    padding: 15px 0 0 15px;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+    border-top: none;
+    z-index: 5;
+    position: absolute;
+    top: 64px;
+    left: 35px;
+}
+.search .search_result li{
+    height: 30px;
+    color: #333333;
+    font-size: 12px;
+}
+.search .search_result li:hover{
+    color: #fff;
+    background-color: #fa2a83;
+}
 .search .search_onclick{
     width: 370px;
     height: 199px;
@@ -416,7 +438,7 @@ ul li:nth-child(5) a i{
     position: absolute;
     top: 64px;
     left: 35px;
-    z-index: 5;
+    z-index: 4;
     display: none;
 }
 .search .search_onclick .search_onclick_left{
