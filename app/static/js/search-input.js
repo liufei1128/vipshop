@@ -8,6 +8,9 @@ $('.text').on("blur", function () {
 $('.magnifier').on("click",function(){
     window.location = "search.html";
 })
+$('.shopping_bag').on("click",function(){
+    window.location = "shop_car.html";
+})
 const searchInp = (function () {
     return {
         init(ele) {

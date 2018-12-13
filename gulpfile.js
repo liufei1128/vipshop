@@ -14,7 +14,7 @@ sass.compiler = require('node-sass');
 var del = require('del');
 
 gulp.task('default', function(callback) {
-	run(['minijs', 'sass', 'miniimage','iconfont'],
+	run(['minijs', 'sass', 'miniimage','iconfont','json'],
 		'minihtml',
 		'connect',
         'watch',
@@ -47,6 +47,7 @@ gulp.task("miniimage",function(){
     .pipe(gulp.dest('dist/static/images'))
     .pipe(connect.reload())
 })
+
 gulp.task("minijs",function(){
 	gulp.src('app/static/js/*.js')
 		.pipe(babel({
@@ -65,7 +66,11 @@ gulp.task("iconfont",function(){
 	.pipe(gulp.dest('dist/static/font'))
 	.pipe(connect.reload())
 });
-
+gulp.task("json",function(){
+	gulp.src('app/static/json/*')
+	.pipe(gulp.dest('dist/static/json'))
+	.pipe(connect.reload())
+});
 gulp.task('watch', function() {
     gulp.watch('app/**/*.html', ['minihtml'])
     gulp.watch('app/**/*.js', ['minijs'])

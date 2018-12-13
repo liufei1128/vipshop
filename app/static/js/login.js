@@ -33,7 +33,7 @@ var loginWrap = (function() {
 			});
 			
 			$btn.click(function(){
-				sendAjax("http://10.36.141.162:8888/vipshop/vipshop/server/php/login.php",{
+				sendAjax("http://localhost:8888/vipshop/vipshop/server/php/login.php",{
 					data:{
 						name: $username.value,
 						password:$password.value
@@ -44,7 +44,6 @@ var loginWrap = (function() {
 					data = JSON.parse(data);
 					setTimeout(_=>{
 						if(data.code == "10000"){
-							console.log(data.data);
 							document.cookie = `username =${data.data}`;
 							console.log(document.cookie);
 							alert("登录成功");

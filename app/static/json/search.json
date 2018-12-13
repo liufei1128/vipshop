@@ -1,0 +1,77 @@
+{
+	"code":"0",
+	"data":[
+			{
+				"height":"1200",
+				"src":"http://a.vpimg4.com/upload/merchandise/pdcvis/107886/2018/1109/164/79b6e72e-c2cc-4af3-8de9-adc5020133a7_5t.jpg",
+				"discount":"2.3折",
+				"imgtype":"JPG",
+				"title":"千纸鹤",
+				"width":"1200", 
+				"price":"￥439",
+				"oldPrice":"￥1929",
+				"content":"千纸鹤  【时尚连帽 加厚保暖】秋冬新款男士时尚休闲青年连帽男士外套男士棉服男装",
+				"introduce":"【时尚连帽 加厚保暖】秋冬新款男士时尚休闲青年连帽男士外套男士棉服男装",
+				"data":[
+					"//a.vpimg3.com/upload/merchandise/pdcvis/113684/2018/1116/79/b5c7b872-7576-45a0-a8a5-f7809f5e40a1_64x64_90.jpg",
+					"//a.vpimg3.com/upload/merchandise/pdcvis/113684/2018/1116/127/e0da1eb4-e4b7-427d-85f8-1d3051d2e626_64x64_90.jpg",
+					"//a.vpimg3.com/upload/merchandise/pdcvis/113684/2018/1116/69/c2251a6f-c027-41d1-a782-0a14b0103114_64x64_90.jpg",
+					"//a.vpimg3.com/upload/merchandise/pdcvis/113684/2018/1116/94/ad88a47e-066b-4b7b-b319-63ba06e72fe2_64x64_90.jpg"
+				]
+			},
+			{
+				"height":"1200",
+				"src":"http://a.vpimg3.com/upload/merchandise/pdcvis/2018/11/14/51/8ba589fb-0ff4-412c-8a1a-b81a1bc7df4f_5t_235x297_90.jpg",
+				"discount":"2.4折",
+				"imgtype":"JPG",
+				"title":"韩都衣舍",
+				"width":"1200", 
+				"price":"￥598",
+				"oldPrice":"￥2518",
+				"content":"韩都衣舍  2018冬季新款韩版女装休闲运动撞色长袖加厚羽绒服",
+				"introduce":"2018冬季新款韩版女装休闲运动撞色长袖加厚羽绒服",
+				"data":[
+					"//a.vpimg2.com/upload/merchandise/pdcvis/2018/11/14/56/268f89a8-759a-4b29-aeb0-920ab38ee713.jpg",
+					"//a.vpimg2.com/upload/merchandise/pdcvis/2018/09/25/187/80865fb9-22af-45e0-8be5-bd0c72347cc9.jpg",
+					"//a.vpimg2.com/upload/merchandise/pdcvis/2018/09/25/130/e5525ac7-2fd7-4dfd-9229-08973ff65a99.jpg",
+					"//a.vpimg2.com/upload/merchandise/pdcvis/2018/09/25/131/23ccd549-74bc-497b-8125-8e648069b8aa.jpg"
+				]
+			},
+			{
+				"height":"1200",
+				"src":"http://a.vpimg3.com/upload/merchandise/pdcvis/113684/2018/1116/79/b5c7b872-7576-45a0-a8a5-f7809f5e40a1.jpg",
+				"discount":"1.8折",
+				"imgtype":"JPG",
+				"title":"维欧艾",
+				"width":"1200", 
+				"price":"￥14998",
+				"oldPrice":"￥83350",
+				"content":"维欧艾   VOA雪白貂皮毛帽领钻石扣蕃茄红绗缝牡丹绣花两件套真丝棉衣",
+				"introduce":"VOA雪白貂皮毛帽领钻石扣蕃茄红绗缝牡丹绣花两件套真丝棉衣",
+				"data":[
+					"//a.vpimg3.com/upload/merchandise/pdcvis/113684/2018/1116/79/b5c7b872-7576-45a0-a8a5-f7809f5e40a1.jpg",
+					"//a.vpimg3.com/upload/merchandise/pdcvis/113684/2018/1116/127/e0da1eb4-e4b7-427d-85f8-1d3051d2e626.jpg",
+					"//a.vpimg3.com/upload/merchandise/pdcvis/113684/2018/1116/69/c2251a6f-c027-41d1-a782-0a14b0103114.jpg",
+					"//a.vpimg3.com/upload/merchandise/pdcvis/113684/2018/1116/88/37c70c94-ddfd-4811-86b6-8c37e8441e6d.jpg"
+				]
+			},
+			{
+				"height":"1200",
+				"src":"http://a.vpimg3.com/upload/merchandise/pdcvis/113684/2018/0726/83/bee307a2-0461-48d5-8a40-86b667555a65_5t.jpg",
+				"discount":"1.3折",
+				"imgtype":"JPG",
+				"title":"维欧艾",
+				"width":"1200", 
+				"price":"￥1998",
+				"oldPrice":"￥15850",
+				"content":"维欧艾   VOA貂皮毛帽领黄色派克休闲H型暗扣拉链100%蚕丝棉袄",
+				"introduce":"VOA貂皮毛帽领黄色派克休闲H型暗扣拉链100%蚕丝棉袄",
+				"data":[
+					"//a.vpimg3.com/upload/merchandise/pdcvis/113684/2018/0726/83/bee307a2-0461-48d5-8a40-86b667555a65_5t.jpg",
+					"//a.vpimg3.com/upload/merchandise/pdcvis/2018/07/11/1/779e77d7-c6de-4b07-b858-4b521f449934.jpg",
+					"//a.vpimg3.com/upload/merchandise/pdcvis/2018/07/11/72/b996af6c-955c-4f65-ac7e-849a4c98911e.jpg",
+					"//a.vpimg3.com/upload/merchandise/pdcvis/2018/07/11/28/883f58e4-d33f-4632-9969-1338d7668c48.jpg"
+				]
+			}
+		]
+}
