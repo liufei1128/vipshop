@@ -55,7 +55,7 @@ const searchInp = (function () {
             }
             this.$searchRes.style.display = 'block';
             $li.onclick = function(){
-                location.assign()
+                window.location = "details.html";
             }
         }
     }
