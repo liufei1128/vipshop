@@ -29,12 +29,12 @@ gulp.task("minihtml",function(){
     .pipe(connect.reload())//实时刷新
 });
 
-//gulp.task("minicss",function(){
-//	gulp.src('app/static/css/**/*.css')
-//  .pipe(minicss())
-//  .pipe(gulp.dest('dist/static/css'))
-//  .pipe(connect.reload())
-//});
+gulp.task("minicss",function(){
+	gulp.src('app/static/css/**/*.css')
+    .pipe(minicss())
+    .pipe(gulp.dest('dist/static/css'))
+    .pipe(connect.reload())
+});
 gulp.task("sass",function(){
 	return gulp.src('app/static/css/*.scss')
     .pipe(sass().on('error',sass.logError))
