@@ -5,6 +5,9 @@ $('.text').on("click", function () {
 $('.text').on("blur", function () {
     $('.search_onclick').css("display", "none");
 })
+$('.magnifier').on("click",function(){
+    window.location = "details.html";
+})
 const searchInp = (function () {
     return {
         init(ele) {
@@ -54,11 +57,11 @@ const searchInp = (function () {
                 $li.innerHTML = data[i];
             }
             this.$searchRes.style.display = 'block';
-            $li.onclick = function(){
-                window.location = "details.html";
-            }
         }
     }
 }())
 searchInp.init('.search');
 var insertData = searchInp.insertData.bind(searchInp);
+$('.search_result').on("click",'li',function(){
+    window.location = "details.html";
+})

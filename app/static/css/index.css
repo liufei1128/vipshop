@@ -409,7 +409,6 @@ ul li:nth-child(5) a i{
     height: auto;
     background-color: #fff;
     border: 1px solid #cccccc;
-    padding-top: 5px;
     border-radius: 0 0 4px 4px;
     box-sizing: border-box;
     border-top: none;
@@ -426,6 +425,9 @@ ul li:nth-child(5) a i{
     font-size: 12px;
     padding-left: 15px;
     cursor: pointer;
+}
+.search .search_result li:nth-child(1){
+    margin-top: 5px;
 }
 .search .search_result li:hover{
     color: #fff;
