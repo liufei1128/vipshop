@@ -5,11 +5,13 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/index.css" />
 		<link rel="stylesheet" type="text/css" href="static/css/details.css" />
 	</head>
 
 	<body>
-
+		<section id="top"></section>
+		<section id ="head"></section>
 		<section id="details_wrap">
 			<div class="details content">
 				<div class="details_title">
@@ -253,6 +255,15 @@
 		
 		<script src="static/js/jquery.js"></script>
 		<script src="static/js/ajax0.1.0.js"></script>
+		<script src= "static/js/search-input.js"></script>
+		<script>
+			$('#top').load('index.html #top_wrapper',function(){
+				
+			});
+			$('#head').load('index.html #header_wrapper',function(){
+				searchInp.init('.search');
+			});
+		</script>
 		<script src="static/js/details.js"></script>
 		<script src="static/js/details_refer.js"></script>
 	</body>
