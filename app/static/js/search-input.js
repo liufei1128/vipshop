@@ -6,7 +6,7 @@ $('.text').on("blur", function () {
     $('.search_onclick').css("display", "none");
 })
 $('.magnifier').on("click",function(){
-    window.location = "details.html";
+    window.location = "search.html";
 })
 const searchInp = (function () {
     return {
@@ -63,5 +63,5 @@ const searchInp = (function () {
 searchInp.init('.search');
 var insertData = searchInp.insertData.bind(searchInp);
 $('.search_result').on("click",'li',function(){
-    window.location = "details.html";
+    window.location = "search.html";
 })
