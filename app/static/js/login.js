@@ -33,7 +33,7 @@ var loginWrap = (function() {
 			});
 			
 			$btn.click(function(){
-				sendAjax("http://10.36.141.162:8888/vipshop/vipshop/server/php/login.php",{
+				sendAjax("http://localhost:8888/vipshop/vipshop/server/php/login.php",{
 					data:{
 						name: $username.value,
 						password:$password.value

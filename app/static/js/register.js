@@ -78,7 +78,7 @@ var register = (function() {
 				var $b = this.nextElementSibling;
 				var $p = $b.nextElementSibling;
 				if($b.className.indexOf("icon-success") != -1) {
-					sendAjax("http://10.36.141.162:8888/vipshop/vipshop/server/php/check.php", {
+					sendAjax("http://localhost:8888/vipshop/vipshop/server/php/check.php", {
 						data: {
 							tel: _this.value
 						}
@@ -136,7 +136,7 @@ var register = (function() {
 						return;
 					}
 				}
-				sendAjax("http://10.36.141.162:8888/vipshop/vipshop/server/php/register.php", {
+				sendAjax("http://localhost:8888/vipshop/vipshop/server/php/register.php", {
 						method: "get",
 						data: {
 							tel: form["tel"].value,
