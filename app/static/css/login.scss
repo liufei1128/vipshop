@@ -1,0 +1,272 @@
+/*版芯*/
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+/*头部*/
+#header_wrap {
+  background: #fff;
+}
+.header {
+  background: #ffffff;
+  .logo {
+    float: left;
+    h1 {
+      a {
+        margin: 25px 0;
+        display: block;
+        width: 125px;
+        height: 50px;
+        background: url(../images/re_icons.png) no-repeat;
+        background-position: -300px -82px;
+        text-indent: -9999px;
+      }
+    }
+  }
+  .logo_right {
+    margin: 39px 0;
+    float: right;
+    width: 296px;
+    height: 22px;
+    background: url(../images/re_icons.png) no-repeat;
+    background-position: 0 -39px;
+  }
+}
+/*banner图*/
+#banner_wrap {
+  height: 655px;
+  background: url(../images/banner.jpg);
+}
+.banner {
+  background: url(../images/banner.jpg) center 0;
+  height: 555px;
+  padding: 50px 20px;
+  .login {
+    width: 360px;
+    background: #fff;
+    float: right;
+    .login_header {
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #e0e0e0;
+      overflow: hidden;
+      a {
+        float: left;
+        display: inline-block;
+        width: 178px;
+        height: 50px;
+        color: #f10180;
+        font-size: 18px;
+        line-height: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        &:nth-child(2) {
+          float: right;
+          color: #666;
+        }
+        &:hover {
+          color: #f10180;
+        }
+      }
+    }
+    .login_sm_body {
+      /*display: none;*/
+      .ewm {
+        height: 246px;
+        position: relative;
+        .ewm_img {
+          position: absolute;
+          /*left: -130px;*/
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 172px;
+          height: 172px;
+          background: url(../images/ewm.png) no-repeat center;
+          border: 1px solid #eee;
+          transition: all 0.3s linear 0.5s;
+        }
+        .ewm_phone {
+          position: absolute;
+          top: 27px;
+          right: 30px;
+          width: 120px;
+          height: 192px;
+          background: url(../images/re_icons.png) center;
+          background-position: 0 -104px;
+          opacity: 0;
+          transition: all 0.3s linear 0.5s;
+        }
+        &:hover {
+          .ewm_img {
+            left: -130px;
+          }
+          .ewm_phone {
+            opacity: 1;
+          }
+        }
+      }
+      p {
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 26px;
+        span {
+          color: #f10180;
+          line-height: 24px;
+        }
+      }
+    }
+    .wx {
+      padding: 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ccc;
+      margin-bottom: 12px;
+      a {
+        span {
+          position: static;
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background: url(../images/re_icons.png);
+          background-position: -300px -161px;
+        }
+      }
+    }
+    .login_footer {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 30px;
+      line-height: 24px;
+      color: #ccc;
+      font-size: 12px;
+      margin-bottom: 15px;
+      a {
+        color: #666;
+        font-size: 12px;
+        b {
+          color: #aaa;
+          span {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+          }
+        }
+        &:last-child {
+          color: #666;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .login_form {
+    display: none;
+    margin-top: 10px;
+    padding: 30px;
+    p {
+      height: 26px;
+    }
+    input {
+      padding: 6px 10px;
+      width: 248px;
+      height: 32px;
+      border: 1px solid #b2b2b2;
+      border-radius: 3px;
+      background-color: #fff;
+      color: #333;
+      line-height: 32px;
+      box-sizing: content-box;
+      &::-webkit-input-placeholder {
+        color: #999999;
+      }
+    }
+    .username {
+      position: relative;
+      strong {
+        display: none;
+        position: absolute;
+        top: -20px;
+        font-size: 12px;
+        color: #f10180;
+      }
+      input {
+        padding-left: 40px;
+      }
+      span {
+        background-position: -460px -161px;
+      }
+    }
+    .password {
+      position: relative;
+      input {
+        padding-left: 40px;
+      }
+      span {
+        background-position: -388px -161px;
+      }
+    }
+    span {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 13px;
+      left: 11px;
+      z-index: 1;
+      background: url(../images/re_icons.png);
+    }
+    .checkBox {
+      font-size: 12px;
+      height: 32px;
+      margin: 2px 0 5px;
+      .checkBox_div {
+        float: left;
+      }
+      input {
+        float: left;
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        margin: 0;
+      }
+      a {
+        float: right;
+        display: block;
+      }
+    }
+    .sub {
+      button {
+        padding: 0;
+        margin-top: 4px;
+        width: 298px;
+        height: 44px;
+        line-height: 40px;
+        border: 1px solid;
+        display: inline-block;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        font-size: 18px;
+        background: #f10180;
+        box-sizing: content-box;
+      }
+    }
+  }
+}
+/*扫码登录*/
+/*账户登录*/
+/*尾部*/
+#footer_wrap {
+  background: #fff;
+}
+.footer {
+  background: #fff;
+  text-align: center;
+  line-height: 83px;
+  font-size: 12px;
+}
