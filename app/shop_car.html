@@ -3,29 +3,229 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/shop_car.css"/>
 	</head>
 	<body>
-		<div class="g-bd">
-			<div class="g-step">
+		<!-- 页面顶部 -->
+		<header id="head_swiper">
+			<header class="header content">
+				<a href="javesceipr:;">唯品会 - 全球精选_正品特卖</a>
+				<div class="head_right">
+					<div class="head_nav">
+						<a>你好，<span class="username">xxx</span></a>
+						<a href="javesceipr:;">订单管理</a>
+						<a>Nub: 400-6789-888</a>
+						<a href="javesceipr:;">在线客服</a>
+						<a href="javesceipr:;">会员服务</a>
+					</div>
+					<ul class="service_tenet">
+						<li><a href="javesceipr:;"></a></li>
+						<li><a href="javesceipr:;"></a></li>
+						<li><a href="javesceipr:;"></a></li>
+					</ul>
+
+			</div>
+		</header>
+		</header>
+		<!--购买步骤-->
+		<div class="g-step">
 				<div class="g-first-step">
-					<a href="javesceipr:;">
-						<div class="first-step-pic"></div>
-						<div class="first-step-text">查看购物车</div>
+					<a href="javesceipr:;" class="first-step-box">
+						<div class="first-step-pic g_pic_wh"></div>
+						<div class="g-step-text">查看购物车</div>
 					</a>
 				</div>
-				<div class="g-step-line">
-					
-				</div>
+				<div class="g-step-line1 g_line_wh"></div>
 				<div class="g-second-step">
-					
+					<a href="javesceipr:;" class="second-step-box">
+						<div class="second-step-pic g_pic_wh"></div>
+						<div class="g-step-text">确认订单消息</div>
+					</a>
 				</div>
-				<div class="g-step-line">
-					
-				</div>
+				<div class="g-step-line2 g_line_wh"></div>
 				<div class="g-third-step">
-					
+					<a href="javesceipr:;" class="third-step-box">
+						<div class="third-step-pic g_pic_wh"></div>
+						<div class="g-step-text">成功提交订单</div>
+					</a>
+				</div>
+			</div>
+		<!--主题内容-->
+		<div class="g-tab content">
+			<a href="javesceipr:;" class="g-tm active">
+				<span>特卖商品</span>
+			</a>
+			|
+			<a href="javesceipr:;" class="g-yy">
+				<span>唯品医药</span>
+			</a>
+		</div>
+		<div class="g-empty">
+			<span class="g-empty-pic"></span>
+			<div class="cart-tips-cnt">
+	                <div class="cart-tips-text">
+	                    <p class="c-empty-title">购物袋空空如也，</p>
+	                    <p class="c-empty-text">快去抢购心仪商品吧~</p>
+	                </div>
+                    <div class="cart-tips-actions">
+                        <a class="ui-btn-primary"  href="javescript:;">立即抢购 </a><!--
+                     --><a class="ui-btn-default"  href="javescript:;" >查看订单</a>
+                    </div>
+                </div>
+		</div>
+		<div class="g-bd1 content">
+			<div class="g-text-tips">
+				<span>配送至<i>深圳市</i></span>
+				<div class="g-tips-right">
+					<p> 请在倒计时结束前提交订单，下单后你另有 30 分钟的支付时间。</p>
+					<span>
+						<ul class="g-tips-box">
+							<li><span>◆</span>好商品需要精挑细选，特意为你留足20分钟考虑时间；</li>
+							<li><span>◆</span>超时后仍可尝试结算，没被人抢走的商品我们会帮你重新放入购物袋。</li>
+						</ul>
+					</span>
+				</div>
+			</div>
+			<div class="g-check-page">
+				<div class="g-car-list">
+					<ul>
+						<li class="g-car-jbtm">精选特卖</li>
+						<li class="g-car-dj">单价</li>
+						<li class="g-car-sl">数量</li>
+						<li class="g-car-xj">小计</li>
+						<li class="g-car-cz">操作</li>
+					</ul>
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tbody class="g-shop-list">
+							
+						</tbody>
+					</table>
+					<div class="gt-footer">
+						<span>运费</span>
+						<p>唯品自营:唯品自营商品已满足新会员专享全场38元包邮</p>
+					</div>
+				</div>
+				<div class="g-car-total">
+					<div class="g-m-price">
+						<div class="m-price-left">
+							<a>使用优惠券</a>
+							<a>使用优惠口令</a>
+						</div>
+						<div class="m-price-right">
+							<div class="price-right-nub">
+								<span>￥<i>598</i></span>
+								<span>￥<i>598</i></span>
+							</div>
+							<div class="price-right-text">
+								<p>共<i class="count-goods">1</i>件商品  商品金额</p>
+								<p>总金额（未含运费）</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="g-car-count">
+						<a href="javescript:;">立即结算</a>
+						<div class="car-count-text">
+							<span>
+								<ul class="g-count-box">
+								<li><i>◆</i>好商品需要精挑细选，特意为你留足20分钟考虑时间；</li>
+								<li><i>◆</i>超时后仍可尝试结算，没被人抢走的商品我们会帮你重新放入购物袋。</li>
+								</ul>
+							</span>
+						<p>请在倒计时结束前结算 </p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="g-tab-good">
+					<ul class="g-tab-nav">
+						<li>购物历史</li>
+					</ul>
+					<ul class="g-good-content">
+						<li class="good_one">
+							<a href="javesceipr:;">
+							<img src="static/images/shop-history.jpg"/>
+							<p title="秋冬加厚翻领真皮修身保暖男士皮衣">秋冬加厚翻领真皮修身保暖男士皮衣</p>
+							</a>
+							<p>尺码：165/88A（46）</p>
+							<div class="g-good-content-b">
+								<span>￥1380</span>
+								<a href="javesceipr:;">重新购买</span>
+							</div>
+						</li>
+						<li class="good_two">
+							<a href="javesceipr:;">
+							<img src="static/images/shop-history.jpg"/>
+							<p title="秋冬加厚翻领真皮修身保暖男士皮衣">秋冬加厚翻领真皮修身保暖男士皮衣</p>
+							</a>
+							<p>尺码：165/88A（46）</p>
+							<div class="g-good-content-b">
+								<span>￥1380</span>
+								<a href="javesceipr:;">重新购买</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="g-promise">
+						<li class="g-promise01"></li>
+						<li class="g-promise02"></li>
+						<li class="g-promise03"></li>
+					</ul>
 				</div>
 			</div>
 		</div>
+		
+		<div class="g-bd2 content">
+			<span class="g-bd2-pic"></span>
+			<div class="g-bd2-text">
+				<p>购物袋空空如也，</p>
+				<p>快去抢购心仪商品吧~</p>
+				<a href="javesceipr:;">立即抢购</a>
+			</div>
+		</div>			
+		<!--尾部-->
+		<footer class="g-footer">
+			<div class="footer-infor content">
+			<p class="footer-link">
+				<a href="javescript:;">关于我们</a>
+				<a href="javescript:;">About us</a>
+				<a href="javescript:;">Investor Relations</a>
+				<a href="javescript:;">媒体报道</a>
+				<a href="javescript:;">品牌招商</a>
+				<a href="javescript:;">隐私条款</a>
+				<a href="javescript:;">唯品诚聘</a>
+				<a href="javescript:;">唯品卡</a>
+				<a href="javescript:;">联系我们</a>
+			</p>
+			<p class="footer-text">
+				Copyright © 2008-2018 vip.com，All Rights Reserved 使用本网站即表示接受
+				<a href="javescript:;">唯品会用户协议</a>
+				。版权所有
+				<a href="javescript:;">广州唯品会电子商务有限公司</a><br />
+				<a href="javescript:;"><img src="static/images/police_icon.png">粤公网安备 44010302111111号</a>
+				&nbsp;&nbsp;
+				<a href="javescript:;">粤ICP备08114786号</a>
+				<a href="javescript:;">增值业务经营许可证：粤B2-20170777 </a>
+				<a href="javescript:;">网络文化经营许可证：粤网文〔2018〕5030-1743号</a><br />
+				<a href="javescript:;">自营主体经营证照</a>
+				&nbsp;&nbsp;
+				<a href="javescript:;">风险监测信息</a>
+				&nbsp;&nbsp;
+				<a href="javescript:;">互联网药品交易服务资格证（粤C20140002）</a>
+			</p>
+			</div>
+			<div class="footer-pic content">
+				<a href="javesrcipt:;"><i class="footer-pic-01" title="网联特约商户"></i></a>
+				<a href="javesrcipt:;"><i class="footer-pic-02" title="消费维权服务站"></i></a>
+				<a href="javesrcipt:;"><i class="footer-pic-03" title="红盾电子链接标识"></i></a>
+				<a href="javesrcipt:;"><i class="footer-pic-04" title="网络警察报警平台"></i></a>
+				<a href="javesrcipt:;"><i class="footer-pic-05" title="公安局网络警察支队"></i></a>
+				<a href="javesrcipt:;"><i class="footer-pic-06" title="诚信网站"></i></a>
+				<a href="javesrcipt:;"><i class="footer-pic-07" title="可信网站"></i></a>
+			</div>
+		</footer>
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/ajax0.1.0.js"></script>
+	<script src="static/js/shop_car.js"></script>
 	</body>
 </html>
