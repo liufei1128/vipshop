@@ -11,7 +11,8 @@ var shopCar =(function(){
 			this.$gbd1 = $('.g-bd1');
 			this.$gbd2 = $('.g-bd2');
 			this.commit =$('.g-car-count a');
-			this.getData().then(_=> {
+			this.getData();
+			// .then(_=> { //当使用ajax请求json文件模式 需要处理异步
 				this.$plusall = $('.quantity-plus');
 				this.$reduceall = $('.quantity-reduce');
 				this.$count = $('.quantity-count');
@@ -20,9 +21,23 @@ var shopCar =(function(){
 				this.$priceall = $('.price-right-nub span i');
 				this.$countGoods = $('.count-goods');
 				this.$delGood = $('.actions-item span');
-				this.$alltr = $(this.$allshop).children()				
+				this.$alltr = $(this.$allshop).children();
+
+				//购物车为空时候显示
+				this.$gempty = $('.g-empty');
+				this.$texttips = $('.g-text-tips');
+				this.$carlist = $('.g-car-list');
+				this.$cartotal = $('.g-car-total');		
 				this.event();
-			})
+				if($(this.$alltr).length == 0){
+					$(this.$texttips).css({'display':'none'});
+					$(this.$carlist).css({'display':'none'});
+					$(this.$cartotal).css({'display':'none'});
+					$(this.$gempty).css({'display':'block'});
+				}
+				// $(_this.$gempty).css({'display':'none'});
+				
+			// })
 			// debugger
 		},
 		event(){
@@ -32,13 +47,23 @@ var shopCar =(function(){
 			$(this.$gyy).click(function(){
 				$(_this.$gbd1).css({'display':'none'});
 				$(_this.$gbd2).css({'display':'block'});
+				$(_this.$gempty).css({'display':'none'});
 				// $(this).addClass('active').siblings().removeClass('active');
 				$(_this.$gtm).removeClass('active');
 				$(_this.$gyy).addClass("active");				
 			});
 			$(this.$gtm).click(function(){
+				if($(_this.$alltr).length == 0){
+					console.log(3333);
+					$(this.$texttips).css({'display':'none'});
+					$(this.$carlist).css({'display':'none'});
+					$(this.$cartotal).css({'display':'none'});
+					console.log($(_this.$gempty));
+					$(_this.$gempty).css({'display':'block'});
+				}
 				$(_this.$gbd1).css({'display':'block'});
 				$(_this.$gbd2).css({'display':'none'});
+				$(_this.$gempty).css({'display':'none'});
 				$(_this.$gtm).addClass('active');
 				$(_this.$gyy).removeClass("active");
 			});
@@ -87,6 +112,11 @@ var shopCar =(function(){
 					s-= $( _this.$pricecount[i]).text();
 					$(_this.$priceall[0]).text(s);
 					$(_this.$priceall[1]).text(s);
+					//修改本地缓存
+					var shopList = localStorage.getItem('shopList') || '[]';
+					shopList = JSON.parse(shopList);
+					shopList.splice(i);
+					localStorage.shopList = JSON.stringify(shopList);
 				});
 			}
 			$(this.commit).click(function(){
@@ -94,21 +124,22 @@ var shopCar =(function(){
 			});
 		},
 		getData() {
-			// var shopList = localStorage.shopList || '[]';
-			// shopList = JSON.parse(shopList);
-			// console.log(shopList);
-			// this.insertData(shopList)
-			return sendAjax('static/json/shoplist.json').then(res => {
-				res = JSON.parse(res);
-				if(res.code == 0) {
-					// 把商品数据存到shop对象里
-					this.data = res.data;
-					console.log(this.data);
-					this.insertData(res.data);
-				} else {
-					alert("获取信息失败, 请查询网络状况");
-				}
-			});
+				var shopList = localStorage.shopList || '[]';
+				shopList = JSON.parse(shopList);
+				console.log(shopList);
+				this.insertData(shopList);
+			
+			// return sendAjax('static/json/shoplist.json').then(res => {
+			// 	res = JSON.parse(res);
+			// 	if(res.code == 0) {
+			// 		// 把商品数据存到shop对象里
+			// 		this.data = res.data;
+			// 		console.log(this.data);
+			// 		this.insertData(res.data);
+			// 	} else {
+			// 		alert("获取信息失败, 请查询网络状况");
+			// 	}
+			// });
 		},
 		insertData(data){
 			for(let i= 0; i < data.length; i++ ) {
@@ -116,7 +147,7 @@ var shopCar =(function(){
 				$tr.index = i;
 				$tr.innerHTML = `
 				<td class="product-item">
-					<a href="#"></a>
+					<a href="#"><img src="${data[i].imgsrc}"></a>
 					<h3>
 						<span>自营</span>&nbsp;|
 						<a href="#" title="${data[i].title}">${data[i].title}</a>
@@ -143,3 +174,4 @@ var shopCar =(function(){
 	}
 }())
 shopCar.init();
+constructor
