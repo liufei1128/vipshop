@@ -67,3 +67,12 @@ class Swiper{
 var banner_swiper =new Swiper({
 				$ele: '.banner-box'
 			});
+
+$(window).scroll(function(){
+	console.log(1);
+	if($('html').scrollTop() > 3040){
+		$('.venue_navigation').css("display","block");
+	} else {
+		$('.venue_navigation').css("display","none");
+	}
+})

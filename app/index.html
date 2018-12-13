@@ -19,7 +19,7 @@
 			<ul>
 				<li>
 					<span></span>
-					<a href="login.html">请登录</a>
+					<a href="login.html">请登录<i></i></a>
 					<span></span>
 					<div class="login_hover"><a href="login.html">请登陆</a></div>
 				</li>
@@ -28,7 +28,7 @@
 					<span></span>
 				</li>
 				<li>
-					<a href="#"><span class="present"></span>签到有礼<i></i></a>
+					<a href="#"><span class="present"></span>签到有礼<h3><i></i></h3></a>
 					<span class="sign_in"></span>
 				</li>
 				<li>
@@ -36,7 +36,7 @@
 					<span></span>
 				</li>
 				<li>
-					<a href="#">我的特卖<i></i></a>
+					<a href="#">我的特卖<h3><i></i></h3></a>
 					<span></span>
 					<div class="special_selling">
 						<a href="#">品牌收藏（0）</a>
@@ -45,7 +45,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="#">会员俱乐部<i></i></a>
+					<a href="#">会员俱乐部<h3><i></i></h3></a>
 					<span></span>
 					<div class="top_vip">
 						<a href="#">俱乐部首页</a>
@@ -53,7 +53,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="#">客户服务<i></i></a>
+					<a href="#">客户服务<h3><i></i></h3></a>
 					<span></span>
 					<div class="top_services">
 						<a href="#">联系客服</a>
@@ -70,7 +70,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="#">更多<i></i></a>
+					<a href="#">更多<h3><i></i></h3></a>
 					<div class="top_more">
 						<a href="#">更多精彩内容</a>
 					</div>
@@ -92,11 +92,35 @@
 					<li><a href="#"></a></li>
 				</ul>
 				<div class="search">
-					<input type="text" placeholder="女款羽绒服">
+					<input type="text" class="text" placeholder="女款羽绒服">
 					<input type="submit" class="sub" value="">
+					<ul class="search_result"></ul>
 					<div class="magnifier"></div>
 					<button class="shopping_bag"><span></span>购物袋<i>0</i></button>
-
+					<div class="search_onclick">
+						<div class="search_onclick_left">
+							<div class="onclick_left_title"><p>搜索历史</p><a href="javescript:;"></a></div>
+						</div>
+						<div class="search_onclick_right">
+							<div class="onclick_right_title">精选推荐</div>
+							<ul>
+								<li><a href="javescript:;">羽绒服</a></li>
+								<li><a href="javescript:;">面膜</a></li>
+								<li><a href="javescript:;">手机</a></li>
+								<li><a href="javescript:;">耐克</a></li>
+								<li><a href="javescript:;">欧莱雅</a></li>
+								<li><a href="javescript:;">眼霜</a></li>
+								<li><a href="javescript:;">连衣裙</a></li>
+								<li><a href="javescript:;">A2</a></li>
+								<li><a href="javescript:;">毛衣</a></li>
+							</ul>
+						</div>
+						<!-- 370
+						316 
+             
+						158
+						212 -->
+					</div>
 				</div>
 			</div>
 			<!-- 页面导航 -->
@@ -104,39 +128,817 @@
 				<li>
 					<a href="#"><img src="static/images/head-nav01.png" />商品分类</a>
 					<!-- 导航栏的二级导航 -->
-					<ul class="nav_menu">
+					<ul class="nav_menu clearfix">
 						<li>
 							<a href="#">女装/男装/内衣</a>
+							<!-- 导航栏的三级导航 -->
+							<div class="menu_three">
+								<div class="three_img">
+									<a href=""><img src="static/images/head-menu.png" alt=""></a>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>女下装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>特色女装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+									</ul>
+								</div>
+							</div>
 						</li>
 						<li>
-							<a href="#">女装/男装/内衣</a>
+							<a href="#">女鞋/男鞋/箱包</a>
+							<!-- 导航栏的三级导航 -->
+							<div class="menu_three">
+								<div class="three_img">
+									<a href=""><img src="static/images/head-menu.png" alt=""></a>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>女下装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+							</div>
 						</li>
 						<li>
-							<a href="#">女装/男装/内衣</a>
+							<a href="#">护肤彩妆/个护</a>
+							<!-- 导航栏的三级导航 -->
+							<div class="menu_three">
+								<div class="three_img">
+									<a href=""><img src="static/images/head-menu.png" alt=""></a>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>女下装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
 						</li>
 						<li>
-							<a href="#">女装/男装/内衣</a>
+							<a href="#">运动户外</a>
+							<!-- 导航栏的三级导航 -->
+							<div class="menu_three">
+								<div class="three_img">
+									<a href=""><img src="static/images/head-menu.png" alt=""></a>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>女下装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
 						</li>
 						<li>
-							<a href="#">女装/男装/内衣</a>
+							<a href="#">家电数码</a>
+							<!-- 导航栏的三级导航 -->
+							<div class="menu_three">
+								<div class="three_img">
+									<a href=""><img src="static/images/head-menu.png" alt=""></a>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>女下装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+									<div class="three_main">
+										<h2>人气美衣</h2>
+										<p>></p>
+										<ul>
+											<li><a href="">T恤</a></li>
+											<li><a href="">衬衫</a></li>
+											<li><a href="">连衣裙</a></li>
+											<li><a href="">外套</a></li>
+											<li><a href="">短外套</a></li>
+											<li><a href="">卫衣</a></li>
+											<li><a href="">防晒衣</a></li>
+											<li><a href="">雪纺衫</a></li>
+											<li><a href="">针织衫</a></li>
+											<li><a href="">小西装</a></li>
+											<li><a href="">风衣</a></li>
+											<li><a href="">马甲</a></li>
+											<li><a href="">羽绒</a></li>
+										</ul>
+									</div>
+								</div>
 						</li>
 						<li>
-							<a href="#">女装/男装/内衣</a>
+							<a href="#">母婴童装</a>
+							<!-- 导航栏的三级导航 -->
+							<div class="menu_three">
+								<div class="three_img">
+									<a href=""><img src="static/images/head-menu.png" alt=""></a>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>女下装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
 						</li>
 						<li>
-							<a href="#">女装/男装/内衣</a>
+							<a href="#">手表配饰</a>
+							<!-- 导航栏的三级导航 -->
+							<div class="menu_three">
+								<div class="three_img">
+									<a href=""><img src="static/images/head-menu.png" alt=""></a>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>女下装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
 						</li>
 						<li>
-							<a href="#">女装/男装/内衣</a>
+							<a href="#">居家用品</a>
+							<!-- 导航栏的三级导航 -->
+							<div class="menu_three">
+								<div class="three_img">
+									<a href=""><img src="static/images/head-menu.png" alt=""></a>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>女下装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
 						</li>
 						<li>
-							<a href="#">女装/男装/内衣</a>
+							<a href="#">唯品生活</a>
+							<!-- 导航栏的三级导航 -->
+							<div class="menu_three">
+								<div class="three_img">
+									<a href=""><img src="static/images/head-menu.png" alt=""></a>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>女下装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
 						</li>
 						<li>
-							<a href="#">女装/男装/内衣</a>
+							<a href="#">唯品国际/唯品奢</a>
+							<!-- 导航栏的三级导航 -->
+							<div class="menu_three">
+								<div class="three_img">
+									<a href=""><img src="static/images/head-menu.png" alt=""></a>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>女下装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+							</div>
 						</li>
 						<li>
-							<a href="#">女装/男装/内衣</a>
+							<a href="#">唯品医药</a>
+							<!-- 导航栏的三级导航 -->
+							<div class="menu_three">
+								<div class="three_img">
+									<a href=""><img src="static/images/head-menu.png" alt=""></a>
+								</div>
+								<div class="three_main">
+									<h2>人气美衣</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">T恤</a></li>
+										<li><a href="">衬衫</a></li>
+										<li><a href="">连衣裙</a></li>
+										<li><a href="">外套</a></li>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+								<div class="three_main">
+									<h2>女下装</h2>
+									<p>></p>
+									<ul>
+										<li><a href="">短外套</a></li>
+										<li><a href="">卫衣</a></li>
+										<li><a href="">防晒衣</a></li>
+										<li><a href="">雪纺衫</a></li>
+										<li><a href="">针织衫</a></li>
+										<li><a href="">小西装</a></li>
+										<li><a href="">风衣</a></li>
+										<li><a href="">马甲</a></li>
+										<li><a href="">羽绒</a></li>
+										<li><a href="">棉衣</a></li>
+										<li><a href="">毛衣</a></li>
+										<li><a href="">大衣</a></li>
+										<li><a href="">羊绒/羊毛衫</a></li>
+										<li><a href="">皮衣/皮草</a></li>
+										<li><a href="">套装</a></li>
+									</ul>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</li>
@@ -144,7 +946,7 @@
 					<a href="#">首页</a>
 				</li>
 				<li>
-					<a href="#"><i></i>12.8预付</a>
+					<a href="#"><h3><i></i></h3>12.8预付</a>
 				</li>
 				<li>
 					<a href="#">最后疯抢</a>
@@ -174,13 +976,14 @@
 					<a href="#">预告</a>
 				</li>
 				<li>
-					<a href="#">更多<i></i></a>
+					<a href="#">更多<h3><i></i></h3></a>
 					<div class="nav_more">
+						<a href="#">更多</a>
 						<a href="#">更多</a>
 					</div>
 				</li>
 			</ul>
-		</div>
+			</div>
 	</header>
 	<!--banner-->
 	<div class="contain">
@@ -202,9 +1005,10 @@
 			<a href="javescript:;" class="banner_footer"></a>
 		</div>
 	</div>
-	<div id="mainTop_wrapper">
-		<div class="mainTop_top content">
-			<div class="mainTop_head">
+	<!-- 轮播图下面的内容 -->
+	<div id="maintop_wrapper">
+		<div class="maintop_top content">
+			<div class="maintop_head">
 				<a href="#"></a>
 				<a href="#"></a>
 				<a href="#"></a>
@@ -221,48 +1025,1056 @@
 				<a href="#"></a>
 			</div>
 			<p></p>
-			<div class="mainTop_main">
+			<div class="maintop_main clearfix">
 				<ul>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main01.jpg"><p>护肤套装</p></a>
 					</li>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main02.jpg"><p>护肤套装</p></a>
 					</li>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main03.jpg"><p>护肤套装</p></a>
 					</li>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main02.jpg"><p>护肤套装</p></a>
 					</li>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main01.jpg"><p>护肤套装</p></a>
 					</li>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main03.jpg"><p>护肤套装</p></a>
 					</li>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main01.jpg"><p>护肤套装</p></a>
 					</li>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main02.jpg"><p>护肤套装</p></a>
 					</li>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main03.jpg"><p>护肤套装</p></a>
 					</li>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main02.jpg"><p>护肤套装</p></a>
 					</li>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main01.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main01.jpg"><p>护肤套装</p></a>
 					</li>
 					<li>
-						<a href="#"><img src="static/images/mainTop-main02.jpg"></a>
+						<a href="#"><img src="static/images/mainTop-main03.jpg"><p>护肤套装</p></a>
 					</li>
+				</ul>
+			</div>
+			<div class="maintop_footer">
+				<div class="venue_navigation">
+					<p></p>
+					<ul>
+						<li><a href="#main_women">时尚女装</a></li>
+						<li><a href="#dressing_main">美妆个护</a></li>
+						<li><a href="#man_main">品质男装</a></li>
+						<li><a href="#baby_main">母婴童装</a></li>
+						<li><a href="#shoes_main">鞋靴箱包</a></li>
+						<li><a href="#sports_main">运动户外</a></li>
+						<li><a href="#shirt_main">暖心内衣</a></li>
+						<li><a href="#digital_main">数码家电</a></li>
+						<li><a href="javescript:;">家居家纺</a></li>
+						<li><a href="javescript:;">手表配饰</a></li>
+						<li><a href="javescript:;">海外尖货</a></li>
+						<li><a href="javescript:;">生活超市</a></li>
+						<li><a href="javescript:;">国际大牌</a></li>
+						<li><a href="javescript:;">唯品医药</a></li>
+						<li><a href="#top_wrapper">回顶部<span></span></a></li>
+					</ul>
+				</div>
+				<h2></h2>
+				<ul class="mainfooter-top">
+					<li>
+						<a href="#"><p><span></span><i>MO&Co.周年庆女装专场</i></p></a>
+					</li>
+					<li>
+						<a href="#"><p><span></span><i>MO&Co.周年庆女装专场</i></p></a>
+					</li>
+					<li>
+						<a href="#"><p><span></span><i>MO&Co.周年庆女装专场</i></p></a>
+					</li>
+				</ul>
+				<ul class="mainfooter-footer">
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
+					<li><a href="#"><span></span><i>GXG男装狂欢庆典专场</i></a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	<!-- 主体内容 -->
+	<section id="main_wrapper">
+		<div id="main_women" class="main content">
+			<!-- 女装板块 -->
+			<div class="main_women">
+				<h2></h2>
+				<div class="main_title01">
+					<a href="#">精选品牌</a>
+					<a href="#">专柜大牌</a>
+					<a href="#">潮流女装</a>
+					<a href="#">保暖必备</a>
+				</div>
+				<div class="women_main clearfix">
+					
+					<ul class="clearfix">
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">音儿YINER女装专场</a></h2>
+							<h6><span>1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">恩裳INSUN女装专场</a></h2>
+							<h6><span>0.8</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">白鹿语周年庆精选专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">周年庆茜舞女装专场</a></h2>
+							<h6><span>0.4</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">音儿YINER女装专场</a></h2>
+							<h6><span>1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">恩裳INSUN女装专场</a></h2>
+							<h6><span>0.8</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">白鹿语周年庆精选专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">周年庆茜舞女装专场</a></h2>
+							<h6><span>0.4</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">音儿YINER女装专场</a></h2>
+							<h6><span>1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">恩裳INSUN女装专场</a></h2>
+							<h6><span>0.8</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">白鹿语周年庆精选专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">周年庆茜舞女装专场</a></h2>
+							<h6><span>0.4</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">音儿YINER女装专场</a></h2>
+							<h6><span>1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">恩裳INSUN女装专场</a></h2>
+							<h6><span>0.8</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">白鹿语周年庆精选专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">周年庆茜舞女装专场</a></h2>
+							<h6><span>0.4</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 美妆板块 -->
+			<div id="dressing_main" class="main_dressing">
+				<h2></h2>
+				<div class="main_title02">
+					<a href="#">冬季护肤</a>
+					<a href="#">彩妆香水</a>
+					<a href="#">品质个护</a>
+					<a href="#">海外爆款</a>
+				</div>
+				<div class="dressing_main clearfix">
+					<ul class="clearfix">
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">丸美MARUBI护肤专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">兰蔻Lancome化妆品专场</a></h2>
+							<h6><span>6.2</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">SK-II化妆品专场</a></h2>
+							<h6><span>6.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">薇诺娜winona化妆品专场</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">丸美MARUBI护肤专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">兰蔻Lancome化妆品专场</a></h2>
+							<h6><span>6.2</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">SK-II化妆品专场</a></h2>
+							<h6><span>6.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">薇诺娜winona化妆品专场</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">丸美MARUBI护肤专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">兰蔻Lancome化妆品专场</a></h2>
+							<h6><span>6.2</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">SK-II化妆品专场</a></h2>
+							<h6><span>6.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">薇诺娜winona化妆品专场</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">丸美MARUBI护肤专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">兰蔻Lancome化妆品专场</a></h2>
+							<h6><span>6.2</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">SK-II化妆品专场</a></h2>
+							<h6><span>6.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">薇诺娜winona化妆品专场</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 男装板块 -->
+			<div id="man_main" class="main_man">
+				<h2></h2>
+				<div class="main_title03">
+					<a href="#">精选品牌</a>
+					<a href="#">商务型男</a>
+					<a href="#">时尚潮男</a>
+					<a href="#">保暖必备</a>
+				</div>
+				<div class="man_main clearfix">
+					<ul class="clearfix">
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">Sinbos男装专场</a></h2>
+							<h6><span>0.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">10周年狂欢-唐狮tonlion男装直降专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">森马男装专场-周年狂欢</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">富铤FORTEI男装周年庆专场</a></h2>
+							<h6><span>0.8</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">Sinbos男装专场</a></h2>
+							<h6><span>0.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">10周年狂欢-唐狮tonlion男装直降专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">森马男装专场-周年狂欢</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">富铤FORTEI男装周年庆专场</a></h2>
+							<h6><span>0.8</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">Sinbos男装专场</a></h2>
+							<h6><span>0.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">10周年狂欢-唐狮tonlion男装直降专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">森马男装专场-周年狂欢</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">富铤FORTEI男装周年庆专场</a></h2>
+							<h6><span>0.8</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">Sinbos男装专场</a></h2>
+							<h6><span>0.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">10周年狂欢-唐狮tonlion男装直降专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">森马男装专场-周年狂欢</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">富铤FORTEI男装周年庆专场</a></h2>
+							<h6><span>0.8</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 母婴板块 -->
+			<div id="baby_main" class="main_baby">
+				<h2></h2>
+				<div class="main_title04">
+					<a href="#">童装</a>
+					<a href="#">奶粉</a>
+					<a href="#">尿裤</a>
+					<a href="#">婴装</a>
+				</div>
+				<div class="baby_main clearfix">
+					<ul class="clearfix">
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">巴拉巴拉balabala男童专场</a></h2>
+							<h6><span>3.2</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">笛莎女童精选专场</a></h2>
+							<h6><span>1.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">巴拉巴拉balabala女童专场</a></h2>
+							<h6><span>3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">安奈儿Annil男童专场</a></h2>
+							<h6><span>2.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">巴拉巴拉balabala男童专场</a></h2>
+							<h6><span>3.2</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">笛莎女童精选专场</a></h2>
+							<h6><span>1.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">巴拉巴拉balabala女童专场</a></h2>
+							<h6><span>3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">安奈儿Annil男童专场</a></h2>
+							<h6><span>2.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 鞋靴板块 -->
+			<div id="shoes_main" class="main_shoes">
+				<h2></h2>
+				<div class="main_title05">
+					<a href="#">女鞋</a>
+					<a href="#">箱包</a>
+					<a href="#">男鞋</a>
+					<a href="#">国际大牌</a>
+				</div>
+				<div class="shoes_main clearfix">
+					<ul class="clearfix">
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">美履盛典-百丽BeLLE女鞋专场</a></h2>
+							<h6><span>1.8</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">玩美周年 玩味时髦-思加图STACCATO女鞋专场</a></h2>
+							<h6><span>1.4</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">周年盛“惠”-天美意teenmix女鞋包混合专场</a></h2>
+							<h6><span>1.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">斯凯奇SKECHERS舒适休闲男女鞋专场</a></h2>
+							<h6><span>4.2</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">美履盛典-百丽BeLLE女鞋专场</a></h2>
+							<h6><span>1.8</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">玩美周年 玩味时髦-思加图STACCATO女鞋专场</a></h2>
+							<h6><span>1.4</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">周年盛“惠”-天美意teenmix女鞋包混合专场</a></h2>
+							<h6><span>1.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">斯凯奇SKECHERS舒适休闲男女鞋专场</a></h2>
+							<h6><span>4.2</span>折起</h6>
+							<a href="#">立即购买</a>
+							<li>
+								<a href="#"></a>
+								<h3><i></i></h3>
+								<h2><a href="#">美履盛典-百丽BeLLE女鞋专场</a></h2>
+								<h6><span>1.8</span>折起</h6>
+								<a href="#">立即购买</a>
+							</li>
+							<li>
+								<a href="#"></a>
+								<h3><i></i></h3>
+								<h2><a href="#">玩美周年 玩味时髦-思加图STACCATO女鞋专场</a></h2>
+								<h6><span>1.4</span>折起</h6>
+								<a href="#">立即购买</a>
+							</li>
+							<li>
+								<a href="#"></a>
+								<h3><i></i></h3>
+								<h2><a href="#">周年盛“惠”-天美意teenmix女鞋包混合专场</a></h2>
+								<h6><span>1.7</span>折起</h6>
+								<a href="#">立即购买</a>
+							</li>
+							<li>
+								<a href="#"></a>
+								<h3><i></i></h3>
+								<h2><a href="#">斯凯奇SKECHERS舒适休闲男女鞋专场</a></h2>
+								<h6><span>4.2</span>折起</h6>
+								<a href="#">立即购买</a>
+								<li>
+									<a href="#"></a>
+									<h3><i></i></h3>
+									<h2><a href="#">美履盛典-百丽BeLLE女鞋专场</a></h2>
+									<h6><span>1.8</span>折起</h6>
+									<a href="#">立即购买</a>
+								</li>
+								<li>
+									<a href="#"></a>
+									<h3><i></i></h3>
+									<h2><a href="#">玩美周年 玩味时髦-思加图STACCATO女鞋专场</a></h2>
+									<h6><span>1.4</span>折起</h6>
+									<a href="#">立即购买</a>
+								</li>
+								<li>
+									<a href="#"></a>
+									<h3><i></i></h3>
+									<h2><a href="#">周年盛“惠”-天美意teenmix女鞋包混合专场</a></h2>
+									<h6><span>1.7</span>折起</h6>
+									<a href="#">立即购买</a>
+								</li>
+								<li>
+									<a href="#"></a>
+									<h3><i></i></h3>
+									<h2><a href="#">斯凯奇SKECHERS舒适休闲男女鞋专场</a></h2>
+									<h6><span>4.2</span>折起</h6>
+									<a href="#">立即购买</a>
+					</ul>
+				</div>
+			</div>
+			<!-- 运动户外板块 -->
+			<div id="sports_main" class="main_sports">
+				<h2></h2>
+				<div class="main_title06">
+					<a href="#">国际体用</a>
+					<a href="#">国内体用</a>
+				</div>
+				<div class="sports_main clearfix">
+					<ul class="clearfix">
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">耐克Nike运动休闲男女专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">耐克Nike男女运动专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">NIKE精品运动休闲专场</a></h2>
+							<h6><span>3.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">adidas 潮流运动专场</a></h2>
+							<h6><span>5.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">耐克Nike运动休闲男女专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">耐克Nike男女运动专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">NIKE精品运动休闲专场</a></h2>
+							<h6><span>3.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">adidas 潮流运动专场</a></h2>
+							<h6><span>5.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">耐克Nike运动休闲男女专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">耐克Nike男女运动专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">NIKE精品运动休闲专场</a></h2>
+							<h6><span>3.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">adidas 潮流运动专场</a></h2>
+							<h6><span>5.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">耐克Nike运动休闲男女专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">耐克Nike男女运动专场</a></h2>
+							<h6><span>2.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">NIKE精品运动休闲专场</a></h2>
+							<h6><span>3.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">adidas 潮流运动专场</a></h2>
+							<h6><span>5.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 暖心内衣板块 -->
+			<div id="shirt_main" class="main_shirt">
+				<h2></h2>
+				<div class="main_title07">
+					<a href="#">精选品牌</a>
+					<a href="#">品质羊绒</a>
+					<a href="#">保暖内衣</a>
+					<a href="#">舒适家居服</a>
+					<a href="#">文胸</a>
+				</div>
+				<div class="shirt_main clearfix">
+					<ul class="clearfix">
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">芬腾家居服周年庆活动专场</a></h2>
+							<h6><span>1.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">红豆居家HOdoHOME男女睡衣周年庆专场</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">果壳GUKOO男女家居服周年庆专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">美国GOSO家居服周年庆专场</a></h2>
+							<h6><span>1.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">芬腾家居服周年庆活动专场</a></h2>
+							<h6><span>1.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">红豆居家HOdoHOME男女睡衣周年庆专场</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">果壳GUKOO男女家居服周年庆专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">美国GOSO家居服周年庆专场</a></h2>
+							<h6><span>1.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">芬腾家居服周年庆活动专场</a></h2>
+							<h6><span>1.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">红豆居家HOdoHOME男女睡衣周年庆专场</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">果壳GUKOO男女家居服周年庆专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">美国GOSO家居服周年庆专场</a></h2>
+							<h6><span>1.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">芬腾家居服周年庆活动专场</a></h2>
+							<h6><span>1.3</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">红豆居家HOdoHOME男女睡衣周年庆专场</a></h2>
+							<h6><span>1.6</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">果壳GUKOO男女家居服周年庆专场</a></h2>
+							<h6><span>1.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">美国GOSO家居服周年庆专场</a></h2>
+							<h6><span>1.9</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--数码家电板块 -->
+			<div id="digital_main" class="main_digital">
+				<h2></h2>
+				<div class="main_title08">
+					<a href="#">数码</a>
+					<a href="#">小家电</a>
+					<a href="#">海淘</a>
+				</div>
+				<div class="digital_main clearfix">
+					<ul class="clearfix">
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">华为手机专场</a></h2>
+							<h6><span>3.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">小米手机专场</a></h2>
+							<h6><span>7.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">苹果APPLE专场</a></h2>
+							<h6><span>6.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">荣耀honor手机专场</a></h2>
+							<h6><span>6.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">华为手机专场</a></h2>
+							<h6><span>3.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">小米手机专场</a></h2>
+							<h6><span>7.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">苹果APPLE专场</a></h2>
+							<h6><span>6.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">荣耀honor手机专场</a></h2>
+							<h6><span>6.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">华为手机专场</a></h2>
+							<h6><span>3.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">小米手机专场</a></h2>
+							<h6><span>7.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">苹果APPLE专场</a></h2>
+							<h6><span>6.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">荣耀honor手机专场</a></h2>
+							<h6><span>6.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">华为手机专场</a></h2>
+							<h6><span>3.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">小米手机专场</a></h2>
+							<h6><span>7.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">苹果APPLE专场</a></h2>
+							<h6><span>6.1</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+						<li>
+							<a href="#"></a>
+							<h3><i></i></h3>
+							<h2><a href="#">荣耀honor手机专场</a></h2>
+							<h6><span>6.7</span>折起</h6>
+							<a href="#">立即购买</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 家居家纺板块 home -->
+			<!-- 手表配饰板块 ornament -->
+			<!-- 海外尖货板块 overseas -->
+			<!-- 生活超市板块 supermarket -->
+			<div class="main_botton">
+				<a href="#">去特卖会逛逛 ></a>
+			</div>
+		</div>
+	</section>
 	<!--footer-->
 	<footer id="footer">
 		<div class="footer-inner">
@@ -320,15 +2132,15 @@
 				<dd><a href="javescript:;">换货服务</a></dd>
 			</dl>
 			<dl>
-				<dt>唯品会APP二维码</dt>
+				<dt>唯品会aPP二维码</dt>
 				<dd><img src="static/images/page_bottom_dl_n.png"></dd>
-				<dd>下载唯品会移动APP</dd>
+				<dd>下载唯品会移动aPP</dd>
 			</dl>
 		</div>
 		<div class="footer-infor content">
 			<p class="footer-link">
 				<a href="javescript:;">关于我们</a>
-				<a href="javescript:;">About us</a>
+				<a href="javescript:;">about us</a>
 				<a href="javescript:;">Investor Relations</a>
 				<a href="javescript:;">媒体报道</a>
 				<a href="javescript:;">品牌招商</a>
@@ -338,7 +2150,7 @@
 				<a href="javescript:;">联系我们</a>
 			</p>
 			<p class="footer-text">
-				Copyright © 2008-2018 vip.com，All Rights Reserved 使用本网站即表示接受
+				Copyright © 2008-2018 vip.com，all Rights Reserved 使用本网站即表示接受
 				<a href="javescript:;">唯品会用户协议</a>
 				。版权所有
 				<a href="javescript:;">广州唯品会电子商务有限公司</a><br />
@@ -365,7 +2177,10 @@
 		</div>
 	</footer>
 	<script src="static/js/jquery.js"></script>
-	<script src="static/js/index.js"></script> 
+	<script src="static/js/index.js"></script>
+	<!-- <script src="static/js/ajax0.1.0.js"></script> -->
+	<script src="static/js/jsonp.js"></script>
+	<script src="static/js/search-input.js"></script>
 </body>
 
 </html>
