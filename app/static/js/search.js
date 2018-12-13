@@ -59,7 +59,7 @@ var search = (function() {
 				for(var i = 0; i < data.length; i++) {
 					var li = document.createElement("li");
 					var a = document.createElement("a");
-					a.href = "#";
+					a.href = `details.html?index=${i}`;
 					li.appendChild(a);
 					var img = document.createElement("img");
 					img.src = data[i].src;
